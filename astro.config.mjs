@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
+import tailwindcss from "@tailwindcss/vite";
 
 import sitemap from "@astrojs/sitemap";
 import { remarkModifiedTime } from "./src/utils/remark-modified-time.mjs";
@@ -18,6 +19,10 @@ export default defineConfig({
   },
 
   experimental: {},
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
 
   image: {
     remotePatterns: [
