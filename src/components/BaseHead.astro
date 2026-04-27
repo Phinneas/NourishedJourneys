@@ -40,3 +40,27 @@ const { title, description, image = "/blog-placeholder-1.avif" } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<!-- Plausible -->
+<script defer data-domain="nourishedjourneys.com" src="https://plausible-production.up.railway.app/js/script.js"></script>
+<script is:inline>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+
+<!-- LinkStorm -->
+<!-- LinkStorm link placement code for https://www.nourishedjourneys.com/ -->
+<script defer src="https://linkstorm.io/linkstorm_site_linker.js?projectId=3642&websiteId=5263"></script>
+
+<!-- Matomo -->
+<script is:inline>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//complex-honeybee.pikapod.net/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
