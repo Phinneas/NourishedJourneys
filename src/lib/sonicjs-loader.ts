@@ -2,18 +2,16 @@ import type { Loader } from 'astro/loaders';
 import { z } from 'astro/zod';
 
 const SONICJS_API_URL = process.env.SONICJS_API_URL || 'https://sonicjscms.buzzuw2.workers.dev/api';
+const COLLECTION_ID = '2c306af6-4dab-47c7-8973-f393c7363c99';
 
 export const sonicjsLoader = () => {
   return {
     name: 'sonicjs-loader',
     load: async ({ store, parseData }) => {
-      const response = await fetch(`${SONICJS_API_URL}/content?limit=200`);
+      const response = await fetch(`${SONICJS_API_URL}/content?collectionId=${COLLECTION_ID}&status=published&limit=200`);
       const data = await response.json();
 
-      // Filter for Chester Beard posts only (NourishedJourneys content)
-      const posts = (data.data || []).filter((post: any) =>
-        post.data?.author === 'Chester Beard'
-      );
+      const posts = (data.data || []);
 
       store.clear();
 
