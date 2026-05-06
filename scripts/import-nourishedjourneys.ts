@@ -44,15 +44,15 @@ async function importPosts() {
   const postsTags = db.posts_tags || [];
   const users = db.users || [];
 
-  const tagMap = new Map(tags.map((t: any) => [t.id, t.name]));
-  const userMap = new Map(users.map((u: any) => [u.id, u.name]));
+  const tagMap = new Map<string, string>(tags.map((t: any) => [String(t.id), String(t.name)]));
+  const userMap = new Map<string, string>(users.map((u: any) => [String(u.id), String(u.name)]));
 
   // Build post-tag mapping
   const postTagMap = new Map<string, string[]>();
   for (const pt of postsTags) {
-    const list = postTagMap.get(pt.post_id) || [];
-    if (tagMap.has(pt.tag_id)) list.push(tagMap.get(pt.tag_id)!);
-    postTagMap.set(pt.post_id, list);
+    const list = postTagMap.get(String(pt.post_id)) || [];
+    if (tagMap.has(String(pt.tag_id))) list.push(tagMap.get(String(pt.tag_id))!);
+    postTagMap.set(String(pt.post_id), list);
   }
 
   // Filter to published non-page posts
