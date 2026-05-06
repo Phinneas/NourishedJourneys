@@ -8,10 +8,29 @@ export const sonicjsLoader = () => {
   return {
     name: 'sonicjs-loader',
     load: async ({ store, parseData }) => {
-      const response = await fetch(`${SONICJS_API_URL}/content?collectionId=${COLLECTION_ID}&status=published&limit=200`);
-      const data = await response.json();
+      // The SonicJS API does not filter by collectionId server-side,
+      // so we fetch all published content and filter client-side.
+      // limit=200 causes an API error, so we paginate with limit=100.
+      let allItems: any[] = [];
+      let offset = 0;
+      const pageSize = 100;
 
-      const posts = (data.data || []);
+      while (true) {
+        const response = await fetch(
+          `${SONICJS_API_URL}/content?status=published&limit=${pageSize}&offset=${offset}`
+        );
+        const data = await response.json();
+        const items = data.data || [];
+        if (items.length === 0) break;
+        allItems = allItems.concat(items);
+        if (items.length < pageSize) break;
+        offset += pageSize;
+      }
+
+      // Filter to only posts belonging to the nourishedjourneys collection
+      const posts = allItems.filter(
+        (post: any) => post.collectionId === COLLECTION_ID
+      );
 
       store.clear();
 
@@ -24,32 +43,35 @@ export const sonicjsLoader = () => {
           ? postData.tags.split(',').map((t: string) => t.trim()).filter(Boolean)
           : [];
 
+        // API returns normalized field names (featuredImage, publishedAt)
+        // regardless of the CMS schema's original field names
+        const cover = postData.featuredImage || postData.featuredimage || '';
+        const pubDate = postData.publishedAt || postData.publshedat || post.created_at || new Date().toISOString();
+        const excerpt = postData.excerpt || postData.title;
+
         // Clean up image URL - remove Ghost internal URLs
-        let cover = postData.featuredImage || '';
-        if (cover && (cover.includes('__GHOST_URL__') || cover.startsWith('/'))) {
-          cover = ''; // Set to empty to use placeholder
-        }
+        const cleanCover = cover && (cover.includes('__GHOST_URL__') || cover.startsWith('/')) ? '' : cover;
 
         const transformedData = {
           title: postData.title,
-          pubDate: new Date(postData.publishedAt || postData.createdAt),
-          description: postData.excerpt || postData.title,
-          lastModified: postData.updatedAt,
-          cover: cover,
+          pubDate: new Date(pubDate),
+          description: excerpt,
+          lastModified: postData.updatedAt ? String(postData.updatedAt) : post.updated_at ? String(post.updated_at) : undefined,
+          cover: cleanCover,
           coverAlt: postData.title,
           category: tags.slice(0, 1),
           tags: tags,
           author: postData.author || 'Chester Beard',
-          slug: postData.slug,
+          slug: postData.slug || post.slug,
           content: postData.content,
         };
 
-        const data = await parseData({
+        const parsedData = await parseData({
           id,
           data: transformedData,
         });
 
-        store.set({ id, data });
+        store.set({ id, data: parsedData });
       }
     },
     schema: z.object({
