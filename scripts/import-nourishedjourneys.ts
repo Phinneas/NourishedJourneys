@@ -66,7 +66,7 @@ async function importPosts() {
   for (let i = 0; i < published.length; i++) {
     const post = published[i];
     const postTags = postTagMap.get(post.id) || [];
-    const author = userMap.get(post.author_id) || 'Chester Beard';
+    const author = userMap.get(String(post.author_id)) || 'Chester Beard';
     const excerpt = post.custom_excerpt || (post.plaintext?.slice(0, 200) || post.title);
     const featureImage = post.feature_image || '';
 
