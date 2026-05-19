@@ -7,17 +7,40 @@ import "../assets/app.css";
 ---
 
 <!doctype html>
-<html lang="en" data-theme="forest">
+<html lang="en">
   <head>
     <BaseHead title={title} description={description} />
+    <style>
+      body {
+        background-color: #F7F5F0 !important;
+        color: #2C2C2C;
+      }
+      .page-bg {
+        position: fixed;
+        inset: 0;
+        background: 
+            radial-gradient(ellipse at 20% 50%, rgba(139, 157, 131, 0.08) 0%, transparent 50%),
+            radial-gradient(ellipse at 80% 30%, rgba(212, 163, 115, 0.06) 0%, transparent 50%),
+            radial-gradient(ellipse at 50% 80%, rgba(139, 157, 131, 0.05) 0%, transparent 50%);
+        pointer-events: none;
+        z-index: -1;
+      }
+      /* Override DaisyUI/Tailwind dark defaults if any */
+      .prose {
+        --tw-prose-body: #2C2C2C;
+        --tw-prose-headings: #2C2C2C;
+        --tw-prose-links: #8B9D83;
+      }
+    </style>
   </head>
   <body
-    class="flex flex-col min-h-screen mx-auto max-w-6xl px-4 dark:prose-invert sm:px-6 lg:px-8"
+    class="flex flex-col min-h-screen mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 relative"
   >
+    <div class="page-bg"></div>
     <Header />
 
     <!-- 内容区域，确保其动态调整高度 -->
-    <main class="flex-grow">
+    <main class="flex-grow z-10 relative">
       <slot />
     </main>
 

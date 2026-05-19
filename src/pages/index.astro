@@ -341,11 +341,27 @@ const recentPosts = allPosts.slice(0, 3);
             margin: 0 auto;
         }
 
-        /* Pillar Grid */
+        /* Pillar Grid - Bento */
         .pillars {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
             gap: 1.5rem;
+        }
+
+        .pillars .pillar-card:nth-child(1) {
+            grid-column: 1 / 2;
+            grid-row: 1 / 3;
+        }
+
+        .pillars .pillar-card:nth-child(2) {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+
+        .pillars .pillar-card:nth-child(3) {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
         }
 
         .pillar-card {
@@ -530,11 +546,15 @@ const recentPosts = allPosts.slice(0, 3);
             text-transform: uppercase;
         }
 
-        /* Method Section */
+        /* Method Grid - Bento */
         .method-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: 1fr 1fr 1fr;
             gap: 1.5rem;
+        }
+
+        .method-card:first-child {
+            grid-column: 1 / 3;
         }
 
         .method-card {
@@ -574,11 +594,20 @@ const recentPosts = allPosts.slice(0, 3);
             color: var(--text-muted);
         }
 
-        /* Journal Grid */
+        /* Journal Grid - Bento */
         .journal-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: 1.5fr 1fr 1fr;
             gap: 1.5rem;
+        }
+
+        .journal-card:first-child {
+            grid-column: 1;
+            grid-row: 1 / 3;
+        }
+
+        .journal-card:first-child .journal-image {
+            aspect-ratio: 3/4;
         }
 
         .journal-card {
@@ -920,10 +949,35 @@ const recentPosts = allPosts.slice(0, 3);
                 padding: 3rem 5%;
             }
 
-            .pillars,
-            .method-grid,
+            .pillars {
+                grid-template-columns: 1fr;
+            }
+            .pillars .pillar-card:nth-child(1) {
+                grid-column: 1;
+                grid-row: auto;
+            }
+            .pillars .pillar-card:nth-child(2),
+            .pillars .pillar-card:nth-child(3) {
+                grid-column: 1;
+                grid-row: auto;
+            }
+
+            .method-grid {
+                grid-template-columns: 1fr;
+            }
+            .method-card:first-child {
+                grid-column: 1;
+            }
+
             .journal-grid {
                 grid-template-columns: 1fr;
+            }
+            .journal-card:first-child {
+                grid-column: 1;
+                grid-row: auto;
+            }
+            .journal-card:first-child .journal-image {
+                aspect-ratio: 16/10;
             }
 
             .newsletter-form {
@@ -958,9 +1012,9 @@ const recentPosts = allPosts.slice(0, 3);
     <nav class="nav" id="nav">
         <a href="/" class="nav-logo">Nourished Journeys</a>
         <div class="nav-links">
-            <a href="#pillars">Guides</a>
-            <a href="#journal">Journal</a>
-            <a href="#method">Method</a>
+            <a href="/page/1/">Guides</a>
+            <a href="/resources">Journal</a>
+            <a href="/about/">Method</a>
             <a href="#newsletter" class="nav-cta">Get Weekly Prompts</a>
         </div>
     </nav>
@@ -973,7 +1027,7 @@ const recentPosts = allPosts.slice(0, 3);
             <h1>Stillness isn't a destination.<br>It's a practice you <em>return to</em>.</h1>
             <p class="hero-subtitle">Practical guides for meditation, breathwork, and journaling — built for busy minds, not monks on mountaintops. No apps required.</p>
             <div class="hero-buttons">
-                <a href="#pillars" class="btn btn-primary">
+                <a href="/page/1/" class="btn btn-primary">
                     Browse the Guides
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                 </a>
@@ -1160,9 +1214,9 @@ const recentPosts = allPosts.slice(0, 3);
                     <p class="footer-tagline">Practical mindfulness for real life. No apps required.</p>
                 </div>
                 <div class="footer-links">
-                    <a href="/tag/Meditation/1/">Meditation</a>
-                    <a href="/tag/Yoga/1/">Breathwork</a>
-                    <a href="/tag/Journaling/1/">Journaling</a>
+                    <a href="/page/1/">Guides</a>
+                    <a href="/about/">Method</a>
+                    <a href="/resources">Journal</a>
                     <a href="/about/">About</a>
                     <a href="#newsletter">Newsletter</a>
                 </div>
