@@ -33,6 +33,7 @@ export function getCategoryMetadata(category: string) {
 export const HeaderLinks = [
   { href: "/", title: "Home" },
   { href: "/about/", title: "About" },
+  { href: "/resources/", title: "Resources" },
 ];
 
 // Footer Links, src/components/Footer.astro

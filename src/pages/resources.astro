@@ -1,0 +1,82 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const pdfs = [
+  {
+    title: "The Sleep Gate Workbook",
+    file: "/pdfs/The_Sleep_Gate_Workbook.pdf",
+    description: "A guide to improving your sleep hygiene and routines.",
+  },
+  {
+    title: "The Seasonal Reset Workbook",
+    file: "/pdfs/The_Seasonal_Reset_Workbook.pdf",
+    description: "Tools and prompts for resetting your habits each season.",
+  },
+  {
+    title: "Your Nourished Pace Manifesto",
+    file: "/pdfs/Your_Nourished_Pace_Manifesto.pdf",
+    description: "A manifesto outlining a balanced, sustainable lifestyle.",
+  },
+  {
+    title: "Your Creative Recovery Workbook",
+    file: "/pdfs/Your_Creative_Recovery_Workbook.pdf",
+    description: "Exercises to recover creative energy after burnout.",
+  },
+  {
+    title: "Your Creative Contract Workbook",
+    file: "/pdfs/Your_Creative_Contract_Workbook.pdf",
+    description: "A template for setting creative boundaries with clients.",
+  },
+  {
+    title: "Your Boundary Blueprint Workbook",
+    file: "/pdfs/Your_Boundary_Blueprint_Workbook.pdf",
+    description: "Step‑by‑step blueprint for personal boundary setting.",
+  },
+  {
+    title: "Your Boundary Contract Workbook",
+    file: "/pdfs/Your_Boundary_Contract_Workbook.pdf",
+    description: "Contract‑style worksheet for defining limits.",
+  },
+  {
+    title: "Your Seasonal Reset Workbook",
+    file: "/pdfs/Your_Seasonal_Reset_Workbook.pdf",
+    description: "A personal version of the seasonal reset process.",
+  },
+  {
+    title: "Open Loop Closer",
+    file: "/pdfs/open_loop_closer (1).pdf",
+    description: "Techniques for closing open loops and increasing focus.",
+  },
+  {
+    title: "The Energy Audit",
+    file: "/pdfs/The_Energy_Audit.pdf",
+    description: "Audit your personal energy patterns and optimize daily flow.",
+  },
+  {
+    title: "The Nourished Morning Architecture",
+    file: "/pdfs/the_nourished_morning_architecture.pdf",
+    description: "Blueprint for designing a nourishing morning routine.",
+  },
+];
+---
+
+<BaseLayout title="Resources – PDF Library">
+  <section class="max-w-4xl mx-auto py-12 px-4">
+    <h1 class="text-4xl font-bold mb-6">Download Our Free PDFs</h1>
+    <p class="mb-8 text-lg text-gray-600">
+      Below you’ll find a curated library of guides, workbooks and templates. Click **Download** to get each PDF instantly.
+    </p>
+
+    <ul class="space-y-6">
+      {pdfs.map((doc) => (
+        <li class="border rounded-lg p-6 hover:shadow-lg transition-shadow">
+          <h2 class="text-2xl font-semibold mb-2">{doc.title}</h2>
+          <p class="text-gray-500 mb-4">{doc.description}</p>
+          <a href={doc.file} class="inline-block bg-primary-600 text-white px-4 py-2 rounded hover:bg-primary-700 transition-colors" download>
+            Download PDF
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+</BaseLayout>
