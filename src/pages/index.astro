@@ -5,7 +5,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "@consts";
 
 const allPosts = await getCollection("posts");
 allPosts.sort(
-  (a, b) =>
+  (a: any, b: any) =>
     new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf(),
 );
 
@@ -1093,7 +1093,7 @@ const recentPosts = allPosts.slice(0, 3);
             <h2>Guides that meet you where you are</h2>
         </div>
         <div class="journal-grid">
-            {recentPosts.map((post) => (
+            {recentPosts.map((post: any) => (
             <a href={`/${post.data.slug}/`} class="journal-card fade-in">
                 <div class="journal-image"></div>
                 <div class="journal-content">
@@ -1142,9 +1142,9 @@ const recentPosts = allPosts.slice(0, 3);
                     <cite>— Sarah, Denver</cite>
                 </div>
                 <p>Join 12,000+ readers getting one practical meditation, breathwork, or journaling technique each Monday. Short enough to read on a coffee break.</p>
-                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thanks for subscribing! This is a prototype.');">
+                <form class="newsletter-form" onsubmit="return false;">
                     <input type="email" placeholder="your@email.com" required>
-                    <button type="submit">Join</button>
+                    <button type="submit" onclick="alert('Thanks for subscribing! This is a prototype.');">Join</button>
                 </form>
                 <p class="newsletter-note">No spam. Unsubscribe anytime. One click.</p>
             </div>
@@ -1181,10 +1181,12 @@ const recentPosts = allPosts.slice(0, 3);
         // Nav scroll effect
         const nav = document.getElementById('nav');
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
+            if (nav) {
+                if (window.scrollY > 50) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
             }
         });
 
