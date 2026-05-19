@@ -1,6 +1,5 @@
 ---
 import { getCollection } from "astro:content";
-import BaseLayout from "@layouts/BaseLayout.astro";
 import FormattedDate from "@components/FormattedDate.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "@consts";
 
@@ -10,170 +9,1204 @@ allPosts.sort(
     new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf(),
 );
 
-const recentPosts = allPosts.slice(0, 6);
-
-const topics = [
-  { label: "Meditation for beginners", href: "/tag/Meditation/1/" },
-  { label: "Brain fog & mental clarity", href: "/tag/Brain%20Fog/1/" },
-  { label: "Journaling techniques", href: "/tag/Journaling/1/" },
-  { label: "Breathwork & pranayama", href: "/tag/Yoga/1/" },
-  { label: "Attention & focus", href: "/tag/Attention/1/" },
-  { label: "Mindfulness practices", href: "/tag/Mindfulness/1/" },
-  { label: "Travel & gratitude journals", href: "/tag/Journaling/1/" },
-  { label: "Anxiety & stress relief", href: "/tag/Anxiety/1/" },
-];
+const recentPosts = allPosts.slice(0, 3);
 ---
 
-<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
-  <div class="max-w-[720px] mx-auto px-4 sm:px-8 pb-16">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{SITE_TITLE} — Meditation, Breathwork & Journaling</title>
+    <meta name="description" content={SITE_DESCRIPTION} />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #F7F5F0;
+            --bg-secondary: #EDEAE3;
+            --bg-card: #FFFFFF;
+            --text-primary: #2C2C2C;
+            --text-secondary: #6B6B6B;
+            --text-muted: #9A9A9A;
+            --accent-sage: #8B9D83;
+            --accent-sage-light: #A8B8A0;
+            --accent-sand: #D4A373;
+            --accent-sand-light: #E4C9A8;
+            --border: #E0DDD6;
+            --border-light: #EBE8E1;
+            --shadow-soft: 0 2px 12px rgba(44, 44, 44, 0.06);
+            --shadow-medium: 0 4px 24px rgba(44, 44, 44, 0.08);
+            --radius: 12px;
+            --radius-sm: 8px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.65;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-family: 'Crimson Pro', Georgia, serif;
+            font-weight: 500;
+            line-height: 1.2;
+            color: var(--text-primary);
+        }
+
+        h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
+        h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); }
+        h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
+        h4 { font-size: 1.1rem; }
+
+        p {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 1.2rem 4%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(247, 245, 240, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid transparent;
+            transition: var(--transition);
+        }
+
+        .nav.scrolled {
+            border-bottom-color: var(--border-light);
+            box-shadow: 0 1px 20px rgba(44, 44, 44, 0.04);
+        }
+
+        .nav-logo {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.3rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            color: var(--text-primary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1.5px;
+            background: var(--accent-sage);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--text-primary);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            background: var(--text-primary);
+            color: var(--bg-primary);
+            padding: 0.6rem 1.4rem;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .nav-cta:hover {
+            background: var(--accent-sage);
+            transform: translateY(-1px);
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 8rem 4% 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background: 
+                radial-gradient(ellipse at 20% 50%, rgba(139, 157, 131, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 30%, rgba(212, 163, 115, 0.06) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 80%, rgba(139, 157, 131, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 680px;
+        }
+
+        .hero-label {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--accent-sage);
+            margin-bottom: 2rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 100px;
+        }
+
+        .hero h1 {
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero h1 em {
+            font-style: italic;
+            color: var(--accent-sage);
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2vw, 1.35rem);
+            color: var(--text-secondary);
+            margin-bottom: 2.5rem;
+            max-width: 540px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.9rem 2rem;
+            border-radius: 100px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            font-family: inherit;
+        }
+
+        .btn-primary {
+            background: var(--text-primary);
+            color: var(--bg-primary);
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-sage);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border: 1.5px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--accent-sage);
+            color: var(--accent-sage);
+            transform: translateY(-2px);
+        }
+
+        .hero-scroll {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .hero-scroll svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(8px); }
+        }
+
+        /* Trust Bar */
+        .trust-bar {
+            background: var(--bg-secondary);
+            padding: 1.2rem 4%;
+            text-align: center;
+            border-top: 1px solid var(--border-light);
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .trust-bar p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            letter-spacing: 0.02em;
+        }
+
+        .trust-bar strong {
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        /* Section Base */
+        .section {
+            padding: 5rem 4%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        .section-label {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--accent-sage);
+            margin-bottom: 1rem;
+        }
+
+        .section-header h2 {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        /* Pillar Grid */
+        .pillars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .pillar-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius);
+            padding: 2.5rem 2rem;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pillar-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--accent-sage);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: var(--transition);
+        }
+
+        .pillar-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-medium);
+            border-color: var(--border);
+        }
+
+        .pillar-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .pillar-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: var(--radius-sm);
+            background: var(--bg-secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.4rem;
+        }
+
+        .pillar-card h3 {
+            margin-bottom: 0.75rem;
+        }
+
+        .pillar-card p {
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .pillar-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--accent-sage);
+            transition: var(--transition);
+        }
+
+        .pillar-link:hover {
+            gap: 0.7rem;
+            color: var(--text-primary);
+        }
+
+        .pillar-link svg {
+            width: 16px;
+            height: 16px;
+            transition: var(--transition);
+        }
+
+        /* Featured Practice */
+        .featured {
+            background: var(--bg-secondary);
+            border-radius: var(--radius);
+            padding: 3rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-top: 2rem;
+            border: 1px solid var(--border-light);
+        }
+
+        .featured-badge {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--accent-sand);
+            background: rgba(212, 163, 115, 0.12);
+            padding: 0.4rem 0.9rem;
+            border-radius: 100px;
+            margin-bottom: 1.2rem;
+        }
+
+        .featured h3 {
+            font-size: clamp(1.5rem, 2.5vw, 2rem);
+            margin-bottom: 1rem;
+        }
+
+        .featured p {
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+
+        .featured-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .featured-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .featured-visual {
+            position: relative;
+            aspect-ratio: 4/3;
+            border-radius: var(--radius);
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--border) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .breathing-animation {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 2px solid var(--accent-sage);
+            position: relative;
+            animation: breathe 8s ease-in-out infinite;
+        }
+
+        .breathing-animation::before,
+        .breathing-animation::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            border: 1.5px solid var(--accent-sage-light);
+            opacity: 0.4;
+        }
+
+        .breathing-animation::before {
+            inset: -20px;
+            animation: breathe 8s ease-in-out infinite 0.5s;
+        }
+
+        .breathing-animation::after {
+            inset: -40px;
+            border-color: var(--accent-sand-light);
+            opacity: 0.25;
+            animation: breathe 8s ease-in-out infinite 1s;
+        }
+
+        @keyframes breathe {
+            0%, 100% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.3); opacity: 0.4; }
+        }
+
+        .featured-visual-label {
+            position: absolute;
+            bottom: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        /* Method Section */
+        .method-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .method-card {
+            text-align: center;
+            padding: 2rem;
+            border-radius: var(--radius);
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            transition: var(--transition);
+        }
+
+        .method-card:hover {
+            box-shadow: var(--shadow-soft);
+            transform: translateY(-2px);
+        }
+
+        .method-number {
+            font-family: 'Crimson Pro', serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: var(--accent-sage-light);
+            margin-bottom: 1rem;
+            line-height: 1;
+        }
+
+        .method-card h4 {
+            margin-bottom: 0.75rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+        }
+
+        .method-card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* Journal Grid */
+        .journal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .journal-card {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            overflow: hidden;
+            border: 1px solid var(--border-light);
+            transition: var(--transition);
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .journal-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-medium);
+            color: inherit;
+        }
+
+        .journal-image {
+            aspect-ratio: 16/10;
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--border) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .journal-image::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(44,44,44,0.05) 0%, transparent 50%);
+        }
+
+        /* Abstract pattern overlays for each card */
+        .journal-card:nth-child(1) .journal-image {
+            background: linear-gradient(160deg, #E8E4DC 0%, #D4CFC5 50%, #C8C2B8 100%);
+        }
+        .journal-card:nth-child(2) .journal-image {
+            background: linear-gradient(200deg, #DDD8CF 0%, #D0C9BE 50%, #C5BDB0 100%);
+        }
+        .journal-card:nth-child(3) .journal-image {
+            background: linear-gradient(140deg, #E2DDD4 0%, #D5CFC4 50%, #C9C2B6 100%);
+        }
+
+        .journal-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .journal-tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent-sage);
+            margin-bottom: 0.75rem;
+        }
+
+        .journal-card h4 {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+
+        .journal-meta {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: auto;
+            padding-top: 1rem;
+        }
+
+        .view-all {
+            text-align: center;
+            margin-top: 2.5rem;
+        }
+
+        /* Newsletter */
+        .newsletter-section {
+            background: var(--bg-secondary);
+            border-radius: var(--radius);
+            padding: 4rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            border: 1px solid var(--border-light);
+        }
+
+        .newsletter-visual {
+            position: relative;
+            aspect-ratio: 1;
+            max-width: 320px;
+            margin: 0 auto;
+        }
+
+        .notebook-mockup {
+            width: 100%;
+            height: 100%;
+            background: var(--bg-card);
+            border-radius: var(--radius-sm);
+            box-shadow: 
+                0 1px 2px rgba(0,0,0,0.04),
+                0 4px 8px rgba(0,0,0,0.04),
+                0 8px 16px rgba(0,0,0,0.03);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+
+        .notebook-lines {
+            padding: 2rem 1.5rem;
+        }
+
+        .notebook-lines .line {
+            height: 2px;
+            background: var(--border-light);
+            margin-bottom: 1rem;
+            border-radius: 1px;
+        }
+
+        .notebook-lines .line:nth-child(1) { width: 60%; }
+        .notebook-lines .line:nth-child(2) { width: 85%; }
+        .notebook-lines .line:nth-child(3) { width: 45%; }
+        .notebook-lines .line:nth-child(4) { width: 70%; }
+        .notebook-lines .line:nth-child(5) { width: 55%; }
+        .notebook-lines .line:nth-child(6) { width: 80%; }
+        .notebook-lines .line:nth-child(7) { width: 40%; }
+
+        .pen {
+            position: absolute;
+            bottom: -10px;
+            right: -15px;
+            width: 60px;
+            height: 180px;
+            background: linear-gradient(to bottom, var(--text-secondary) 0%, var(--text-primary) 100%);
+            border-radius: 4px;
+            transform: rotate(-15deg);
+            box-shadow: 2px 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .pen::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 16px;
+            height: 16px;
+            background: var(--accent-sand);
+            border-radius: 50%;
+        }
+
+        .newsletter-content h2 {
+            margin-bottom: 1rem;
+        }
+
+        .newsletter-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial {
+            background: var(--bg-card);
+            border-left: 3px solid var(--accent-sage);
+            padding: 1.25rem 1.5rem;
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            margin-bottom: 2rem;
+        }
+
+        .testimonial p {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.15rem;
+            font-style: italic;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+        }
+
+        .testimonial cite {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-style: normal;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 0.9rem 1.2rem;
+            border: 1.5px solid var(--border);
+            border-radius: 100px;
+            background: var(--bg-card);
+            font-family: inherit;
+            font-size: 0.95rem;
+            color: var(--text-primary);
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .newsletter-form input:focus {
+            border-color: var(--accent-sage);
+            box-shadow: 0 0 0 3px rgba(139, 157, 131, 0.1);
+        }
+
+        .newsletter-form input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .newsletter-form button {
+            padding: 0.9rem 1.8rem;
+            background: var(--text-primary);
+            color: var(--bg-primary);
+            border: none;
+            border-radius: 100px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            white-space: nowrap;
+        }
+
+        .newsletter-form button:hover {
+            background: var(--accent-sage);
+            transform: translateY(-1px);
+        }
+
+        .newsletter-note {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 1rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--text-primary);
+            color: var(--bg-secondary);
+            padding: 4rem 4% 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .footer-brand {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.5rem;
+            color: var(--bg-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-tagline {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--bg-secondary);
+            font-size: 0.9rem;
+            opacity: 0.7;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+            color: var(--accent-sage-light);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-bottom p {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .footer-bottom a {
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--bg-secondary);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                padding: 6rem 5% 3rem;
+            }
+
+            .featured,
+            .newsletter-section {
+                grid-template-columns: 1fr;
+                padding: 2rem;
+                gap: 2rem;
+            }
+
+            .section {
+                padding: 3rem 5%;
+            }
+
+            .pillars,
+            .method-grid,
+            .journal-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+
+            .newsletter-form button {
+                width: 100%;
+            }
+
+            .footer-top {
+                flex-direction: column;
+            }
+        }
+
+        /* Subtle entrance animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <a href="/" class="nav-logo">Nourished Journeys</a>
+        <div class="nav-links">
+            <a href="#pillars">Guides</a>
+            <a href="#journal">Journal</a>
+            <a href="#method">Method</a>
+            <a href="#newsletter" class="nav-cta">Get Weekly Prompts</a>
+        </div>
+    </nav>
 
     <!-- Hero -->
-    <section class="py-12 border-b border-base-content/10">
-      <p class="text-[11px] font-semibold tracking-[0.12em] uppercase text-primary mb-4">
-        Nourished Journeys — Meditation, Journaling &amp; Breathwork
-      </p>
-      <h1 class="font-serif text-[clamp(28px,5vw,44px)] font-medium leading-[1.2] mb-5">
-        Find your calm,<br/><em class="italic text-primary">one breath at a time.</em>
-      </h1>
-      <p class="text-[17px] leading-[1.75] text-base-content/60 max-w-[560px] mb-8">
-        Practical guides for meditation, journaling, and breathwork — written for real
-        people with busy minds, not monks on mountaintops.
-      </p>
-      <div class="flex flex-wrap items-center gap-4 mb-4">
-        <a
-          href="/page/1/"
-          class="inline-block bg-primary text-primary-content rounded-lg px-7 py-3 text-[15px] font-semibold hover:bg-primary/80 transition-colors">
-          Start reading free guides &rarr;
-        </a>
-        <a
-          href="/about/"
-          class="inline-block border border-base-content/12 text-base-content/60 rounded-lg px-5 py-3 text-[15px] font-medium hover:border-primary hover:text-primary transition-colors">
-          About Nourished Journeys
-        </a>
-      </div>
-      <p class="text-[13px] text-base-content/40">No apps required. Just you, a pen, and a few quiet minutes.</p>
-    </section>
-
-    <!-- Why Nourished Journeys -->
-    <section class="py-12 border-b border-base-content/10">
-      <p class="text-[11px] font-semibold tracking-[0.1em] uppercase text-base-content/40 mb-6">
-        Why Nourished Journeys
-      </p>
-      <h2 class="font-serif text-[clamp(20px,3vw,26px)] font-medium mb-3">
-        Meditation advice that meets you where you are
-      </h2>
-      <p class="text-[15px] leading-[1.75] text-base-content/60 mb-8">
-        Most wellness content assumes you have an hour, a yoga mat, and perfect silence.
-        Real life isn't like that. Nourished Journeys is built around the practices
-        that actually fit into a busy day — five-minute meditations, brain dump journaling,
-        simple breath techniques you can do at your desk.
-      </p>
-      <ul class="flex flex-col gap-4">
-        {[
-          "Techniques that work in 5 minutes — not 50. Short, focused practices for real schedules.",
-          "No spiritual jargon. Clear, practical instructions anyone can follow from day one.",
-          "Every guide is grounded in neuroscience and contemplative tradition, not Instagram aesthetics.",
-        ].map((item) => (
-          <li class="flex items-start gap-3 text-[15px] leading-[1.65] text-base-content/60">
-            <span class="flex-shrink-0 mt-[3px] w-[22px] h-[22px] rounded-full bg-primary/15 flex items-center justify-center">
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 6l3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-primary"/>
-              </svg>
-            </span>
-            <span>{item}</span>
-          </li>
-        ))}
-      </ul>
-    </section>
-
-    <!-- Topics -->
-    <section class="py-12 border-b border-base-content/10">
-      <p class="text-[11px] font-semibold tracking-[0.1em] uppercase text-base-content/40 mb-6">
-        What you'll find here
-      </p>
-      <h2 class="font-serif text-[clamp(20px,3vw,26px)] font-medium mb-3">
-        From brain fog to breathwork
-      </h2>
-      <p class="text-[15px] leading-[1.75] text-base-content/60 mb-6">
-        Whether you're trying to clear mental cloudiness, start your first journal,
-        or just figure out how to sit still for five minutes — we've got a guide for it.
-      </p>
-      <div class="flex flex-wrap gap-2">
-        {topics.map((t) => (
-          <a
-            href={t.href}
-            class="inline-block bg-primary/10 text-primary rounded-full px-4 py-[6px] text-[13px] font-medium hover:bg-primary hover:text-primary-content transition-colors">
-            {t.label}
-          </a>
-        ))}
-      </div>
-    </section>
-
-    <!-- Recent posts -->
-    {recentPosts.length > 0 && (
-      <section class="py-12 border-b border-base-content/10">
-        <div class="flex items-end justify-between mb-8">
-          <div>
-            <p class="text-[11px] font-semibold tracking-[0.1em] uppercase text-base-content/40 mb-1">
-              Latest
-            </p>
-            <h2 class="font-serif text-[clamp(20px,3vw,26px)] font-medium">
-              From the Journal
-            </h2>
-          </div>
-          <a href="/page/1/" class="text-[13px] text-primary hover:text-primary/80 font-medium transition-colors">
-            View all &rarr;
-          </a>
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <span class="hero-label">Meditation · Breathwork · Journaling</span>
+            <h1>Stillness isn't a destination.<br>It's a practice you <em>return to</em>.</h1>
+            <p class="hero-subtitle">Practical guides for meditation, breathwork, and journaling — built for busy minds, not monks on mountaintops. No apps required.</p>
+            <div class="hero-buttons">
+                <a href="#pillars" class="btn btn-primary">
+                    Browse the Guides
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+                <a href="#newsletter" class="btn btn-secondary">Get Weekly Prompts</a>
+            </div>
         </div>
-        <div class="grid gap-8 sm:grid-cols-2">
-          {recentPosts.slice(0, 6).map((post) => (
-            <a href={`/${post.data.slug}/`} class="group block">
-              <article class="flex flex-col gap-3">
-                <div class="flex items-center gap-2 text-xs text-base-content/50">
-                  <FormattedDate date={post.data.pubDate} />
-                  {post.data.tags.length > 0 && (
-                    <span class="badge badge-outline badge-sm">{post.data.tags[0]}</span>
-                  )}
+        <div class="hero-scroll">
+            <span>Scroll to explore</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <div class="trust-bar">
+        <p>Featured in <strong>Mindful Magazine</strong> · 50,000+ monthly readers · No apps. No ads. Just practice.</p>
+    </div>
+
+    <!-- Pillars -->
+    <section class="section" id="pillars">
+        <div class="section-header fade-in">
+            <span class="section-label">What you'll find here</span>
+            <h2>From brain fog to breathwork</h2>
+        </div>
+        <div class="pillars">
+            <article class="pillar-card fade-in">
+                <div class="pillar-icon">🧘</div>
+                <h3>Meditation</h3>
+                <p>Beginner to intermediate techniques for daily life. Five-minute practices that fit into real schedules, not hour-long retreats.</p>
+                <a href="/tag/Meditation/1/" class="pillar-link">
+                    Explore
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </article>
+            <article class="pillar-card fade-in">
+                <div class="pillar-icon">🌬️</div>
+                <h3>Breathwork</h3>
+                <p>Nervous system regulation through breath. Simple techniques you can do at your desk, in your car, or before sleep.</p>
+                <a href="/tag/Yoga/1/" class="pillar-link">
+                    Explore
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </article>
+            <article class="pillar-card fade-in">
+                <div class="pillar-icon">✍️</div>
+                <h3>Journaling</h3>
+                <p>Prompts that untangle busy thoughts. Brain dump techniques, morning pages, and reflective writing for clarity.</p>
+                <a href="/tag/Journaling/1/" class="pillar-link">
+                    Explore
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </article>
+        </div>
+
+        <!-- Featured Practice -->
+        <div class="featured fade-in">
+            <div class="featured-content">
+                <span class="featured-badge">This Week's Focus</span>
+                <h3>Box Breathing for Decision Fatigue</h3>
+                <p>When your mind feels like a browser with 47 tabs open, this 4-minute reset creates enough space to choose your next move with clarity.</p>
+                <div class="featured-meta">
+                    <span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        4 min read
+                    </span>
+                    <span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/></svg>
+                        Audio guide available
+                    </span>
                 </div>
-                <h3 class="font-serif text-[17px] font-medium leading-[1.35] group-hover:text-primary transition-colors">
-                  {post.data.title}
-                </h3>
-                <p class="text-[14px] leading-[1.6] text-base-content/60 line-clamp-2">
-                  {post.data.description}
-                </p>
-              </article>
-            </a>
-          ))}
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="/page/1/" class="btn btn-primary">
+                        Read the Guide
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                    <a href="#" class="btn btn-secondary">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        Play Audio
+                    </a>
+                </div>
+            </div>
+            <div class="featured-visual">
+                <div class="breathing-animation"></div>
+                <span class="featured-visual-label">Breathe with the circle</span>
+            </div>
         </div>
-      </section>
-    )}
-
-    <!-- Newsletter signup -->
-    <section class="py-12">
-      <div class="bg-primary/10 rounded-xl p-10">
-        <h2 class="font-serif text-[clamp(20px,3vw,24px)] font-medium mb-2">
-          Get mindfulness prompts in your inbox
-        </h2>
-        <p class="text-[14px] text-primary/70 leading-[1.65] mb-5">
-          A new journaling prompt, meditation technique, or breathing exercise every week.
-          Short enough to read on a coffee break.
-        </p>
-        <form class="flex flex-wrap gap-2" onsubmit="return false;">
-          <input
-            type="email"
-            placeholder="your@email.com"
-            aria-label="Email address"
-            class="flex-1 min-w-[200px] border border-primary/20 rounded-lg px-4 py-[10px] text-[14px] bg-base-100 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"
-          />
-          <button
-            type="submit"
-            class="bg-primary text-primary-content rounded-lg px-6 py-[10px] text-[14px] font-semibold hover:bg-primary/80 transition-colors whitespace-nowrap">
-            Subscribe free
-          </button>
-        </form>
-        <p class="text-[12px] text-primary/40 mt-3">No spam. Unsubscribe any time.</p>
-      </div>
     </section>
 
-  </div>
-</BaseLayout>
+    <!-- Method -->
+    <section class="section" id="method">
+        <div class="section-header fade-in">
+            <span class="section-label">Why this works</span>
+            <h2>Built for real life, not Instagram</h2>
+        </div>
+        <div class="method-grid">
+            <div class="method-card fade-in">
+                <div class="method-number">01</div>
+                <h4>Time Realistic</h4>
+                <p>5-minute practices for real schedules. No hour-long commitments. No guilt when you miss a day.</p>
+            </div>
+            <div class="method-card fade-in">
+                <div class="method-number">02</div>
+                <h4>Clarity First</h4>
+                <p>No Sanskrit required to start. Clear, practical instructions anyone can follow from day one.</p>
+            </div>
+            <div class="method-card fade-in">
+                <div class="method-number">03</div>
+                <h4>Science Grounded</h4>
+                <p>Techniques backed by research and contemplative tradition, not wellness trends or Instagram aesthetics.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journal -->
+    <section class="section" id="journal">
+        <div class="section-header fade-in">
+            <span class="section-label">Latest from the journal</span>
+            <h2>Guides that meet you where you are</h2>
+        </div>
+        <div class="journal-grid">
+            {recentPosts.map((post) => (
+            <a href={`/${post.data.slug}/`} class="journal-card fade-in">
+                <div class="journal-image"></div>
+                <div class="journal-content">
+                    {post.data.tags && post.data.tags.length > 0 && (
+                        <span class="journal-tag">{post.data.tags[0]}</span>
+                    )}
+                    <h4>{post.data.title}</h4>
+                    <div class="journal-meta">
+                        {/* Assuming 4 min read is static for now, or could use reading time plugin */}
+                        <span><FormattedDate date={post.data.pubDate} /></span>
+                    </div>
+                </div>
+            </a>
+            ))}
+        </div>
+        <div class="view-all fade-in">
+            <a href="/page/1/" class="btn btn-secondary">
+                View All Guides
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section" id="newsletter">
+        <div class="newsletter-section fade-in">
+            <div class="newsletter-visual">
+                <div class="notebook-mockup">
+                    <div class="notebook-lines">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="pen"></div>
+                </div>
+            </div>
+            <div class="newsletter-content">
+                <span class="section-label">Weekly practice</span>
+                <h2>One technique, every Monday</h2>
+                <div class="testimonial">
+                    <p>"The Monday prompt is the only email I actually open."</p>
+                    <cite>— Sarah, Denver</cite>
+                </div>
+                <p>Join 12,000+ readers getting one practical meditation, breathwork, or journaling technique each Monday. Short enough to read on a coffee break.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thanks for subscribing! This is a prototype.');">
+                    <input type="email" placeholder="your@email.com" required>
+                    <button type="submit">Join</button>
+                </form>
+                <p class="newsletter-note">No spam. Unsubscribe anytime. One click.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div>
+                    <div class="footer-brand">Nourished Journeys</div>
+                    <p class="footer-tagline">Practical mindfulness for real life. No apps required.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="/tag/Meditation/1/">Meditation</a>
+                    <a href="/tag/Yoga/1/">Breathwork</a>
+                    <a href="/tag/Journaling/1/">Journaling</a>
+                    <a href="/about/">About</a>
+                    <a href="#newsletter">Newsletter</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© {new Date().getFullYear()} Nourished Journeys</p>
+                <div style="display: flex; gap: 1.5rem;">
+                    <a href="#">Privacy</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Nav scroll effect
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+
+</body>
+</html>
