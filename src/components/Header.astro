@@ -11,7 +11,7 @@ const currentPath = Astro.url.pathname.replace(/\/+$/, "") || "/";
   >
     <div>
       <a
-        class="flex-none text-xl font-semibold"
+        class="flex-none text-[1.38rem] font-semibold"
         href="/"
         aria-label={SITE_TITLE}
       >
@@ -20,6 +20,16 @@ const currentPath = Astro.url.pathname.replace(/\/+$/, "") || "/";
     </div>
 
     <div class="ms-auto flex items-center gap-x-1 py-1">
+      <a
+        href="/"
+        class:list={[
+          "px-3 py-2 text-sm font-medium rounded-lg hover:bg-black/5 transition-colors",
+          currentPath === "/" && "text-[#8B9D83] font-semibold",
+        ]}
+        aria-current={currentPath === "/" ? "page" : undefined}
+      >
+        Home
+      </a>
       {HeaderLinks.map((link) => {
         const isActive = link.children
           ? link.children.some((c) => currentPath === c.href.replace(/\/+$/, ""))
