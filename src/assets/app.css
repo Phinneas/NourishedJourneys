@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global typography — Fraunces headings, Instrument Sans body */
+body {
+  font-family: 'Instrument Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
 /* Ghost CMS custom block styles for readable blog posts */
 .prose .hero-lead {
   font-size: 1.125rem;
