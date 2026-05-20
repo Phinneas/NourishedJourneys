@@ -6,20 +6,11 @@ import FormattedDate from "@components/FormattedDate.astro";
 
 const { currentCategory, currentSlug } = Astro.props;
 
-async function getRelatedArticlesByCategory(): Promise<
-  CollectionEntry<"posts">[]
-> {
+async function getRelatedArticlesByCategory(): Promise<CollectionEntry<"posts">[]> {
   const allPosts = await getCollection("posts");
   return allPosts
-    .filter(
-      (post) =>
-        post.data.category.includes(currentCategory) &&
-        post.id !== currentSlug,
-    )
-    .sort(
-      (a, b) =>
-        new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf(),
-    )
+    .filter((post) => post.data.category.includes(currentCategory) && post.id !== currentSlug)
+    .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf())
     .slice(0, 3);
 }
 
@@ -27,24 +18,20 @@ const relatedPosts = await getRelatedArticlesByCategory();
 ---
 
 <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
-  {
-    relatedPosts.map((post) => (
-      <div class="card mb-4 overflow-hidden rounded-xl border-gray-200  transition-transform duration-500 hover:-translate-y-1 hover:scale-105">
-        <a href={`/posts/${post.id}/`}>
-          <OptimizedCover src={post.data.cover} alt={post.data.coverAlt} />
-          <div class="card-body">
-            <div class="flex items-center gap-1 text-xs">
-              {
-                post.data.tags.map((tag) => (
-                  <span class="badge badge-outline">{tag}</span>
-                ))
-              }
-            </div>
-            <p class="text-xs"><FormattedDate date={post.data.pubDate} /></p>
-            <h2 class="card-title">{post.data.title}</h2>
+  {relatedPosts.map((post) => (
+    <div class="bg-white mb-4 overflow-hidden rounded-xl border border-gray-200 transition-transform duration-500 hover:-translate-y-1 hover:scale-105">
+      <a href={`/posts/${post.id}/`}>
+        <OptimizedCover src={post.data.cover} alt={post.data.coverAlt} />
+        <div class="p-4">
+          <div class="flex items-center gap-1 text-xs">
+            {post.data.tags.map((tag) => (
+              <span class="inline-block text-xs px-2 py-0.5 border border-current/20 rounded">{tag}</span>
+            ))}
           </div>
-        </a>
-      </div>
-    ))
-  }
+          <p class="text-xs mt-2"><FormattedDate date={post.data.pubDate} /></p>
+          <h2 class="text-lg font-semibold">{post.data.title}</h2>
+        </div>
+      </a>
+    </div>
+  ))}
 </div>

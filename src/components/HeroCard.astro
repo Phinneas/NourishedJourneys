@@ -14,13 +14,9 @@ function truncateUTF8String(str: string, maxBytes: number) {
   let index = 0;
   while (index < str.length && byteCount < maxBytes) {
     const char = str.charCodeAt(index);
-    if (char > 0x7ff) {
-      byteCount += 3;
-    } else if (char > 0x7f) {
-      byteCount += 2;
-    } else {
-      byteCount += 1;
-    }
+    if (char > 0x7ff) byteCount += 3;
+    else if (char > 0x7f) byteCount += 2;
+    else byteCount += 1;
     if (byteCount <= maxBytes) index++;
     else break;
   }
@@ -30,28 +26,20 @@ function truncateUTF8String(str: string, maxBytes: number) {
 const truncatedDescription = truncateUTF8String(post.data.description, 150);
 ---
 
-<div
-  class="card overflow-hidden rounded-xl bg-base-100 shadow-xl transition-transform duration-500 lg:card-side hover:-translate-y-1 hover:scale-105"
->
+<div class="bg-white overflow-hidden rounded-xl shadow-xl transition-transform duration-500 md:flex hover:-translate-y-1 hover:scale-105">
   <a href={`/${post.data.slug}/`} class="block md:flex md:flex-1">
     <div class="md:w-2/3">
       <OptimizedCover src={post.data.cover} alt={post.data.coverAlt} />
     </div>
-    <div class="card-body">
+    <div class="p-6">
       <div class="mt-8 flex items-center gap-2 text-xs">
-        {
-          post.data.tags.map((tag) => (
-            <span class="badge badge-outline">{tag}</span>
-          ))
-        }
+        {post.data.tags.map((tag) => (
+          <span class="inline-block text-xs px-2 py-0.5 border border-current/20 rounded">{tag}</span>
+        ))}
       </div>
       <p class="text-xs"><FormattedDate date={post.data.pubDate} /></p>
-      <h3 class="card-title">
-        {post.data.title}
-      </h3>
-      <p class="">
-        {truncatedDescription}
-      </p>
+      <h3 class="text-xl font-semibold">{post.data.title}</h3>
+      <p>{truncatedDescription}</p>
     </div>
   </a>
 </div>

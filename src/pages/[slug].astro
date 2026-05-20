@@ -18,8 +18,8 @@ const post = Astro.props;
 
 <BaseLayout title={post.data.title} description={post.data.description}>
   <main>
-    <article class="prose mx-auto dark:prose-invert">
-      <div class="prose-h1 text-center">
+    <article class="prose mx-auto max-w-4xl">
+      <div class="text-center">
         <h1>{post.data.title}</h1>
       </div>
       <div>
@@ -30,10 +30,10 @@ const post = Astro.props;
         }
       </div>
       <div set:html={post.data.content} />
-      <div class="flex gap-2 prose-a:no-underline">
+      <div class="flex gap-2 mt-8">
         {
           post.data.tags.map((tag) => (
-            <span class="badge badge-outline badge-md">
+            <span class="inline-block text-xs px-3 py-1 border border-current/20 rounded-lg">
               <a href={`/tag/${tag}/1/`}>{tag}</a>
             </span>
           ))

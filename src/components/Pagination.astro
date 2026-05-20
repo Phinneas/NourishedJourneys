@@ -33,54 +33,40 @@ function ensureTrailingSlash(path: string) {
 const computedBasePath = basePath ? ensureTrailingSlash(basePath) : "/page/";
 ---
 
-<nav
-  class="mt-8 flex items-center justify-center gap-x-1"
-  aria-label="Pagination"
->
-  {
-    urlPrev ? (
-      <a
-        href={ensureTrailingSlash(urlPrev)}
-        aria-label="Previous page"
-        class="inline-flex min-h-[38px] min-w-[38px] items-center justify-center gap-x-1.5 rounded-lg px-2.5 py-2 text-sm"
-      >
-        <i class="i-tabler-chevron-left icon-base"></i>
-      </a>
-    ) : (
-      ""
-    )
-  }
+<nav class="mt-8 flex items-center justify-center gap-x-1" aria-label="Pagination">
+  {urlPrev ? (
+    <a
+      href={ensureTrailingSlash(urlPrev)}
+      aria-label="Previous page"
+      class="inline-flex min-h-[38px] min-w-[38px] items-center justify-center gap-x-1.5 rounded-lg px-2.5 py-2 text-sm hover:bg-black/5"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+    </a>
+  ) : null}
   <ul class="flex items-center gap-x-1">
-    {
-      Array.from({ length: endPage - startPage + 1 }, (_, i) => {
-        const pageNumber = startPage + i;
-        const isActive = currentPage === pageNumber;
-        const pageClass = `min-h-[38px] min-w-[38px] flex justify-center items-center py-2 px-3 text-sm rounded-lg ${isActive ? "bg-base-300" : ""}`;
-        return (
-          <li>
-            <a
-              href={`${computedBasePath}${pageNumber}/`}
-              class={pageClass}
-              aria-current={isActive ? "page" : undefined}
-            >
-              {pageNumber}
-            </a>
-          </li>
-        );
-      })
-    }
+    {Array.from({ length: endPage - startPage + 1 }, (_, i) => {
+      const pageNumber = startPage + i;
+      const isActive = currentPage === pageNumber;
+      return (
+        <li>
+          <a
+            href={`${computedBasePath}${pageNumber}/`}
+            class={`min-h-[38px] min-w-[38px] flex justify-center items-center py-2 px-3 text-sm rounded-lg ${isActive ? "bg-[#EDEAE3] font-semibold" : "hover:bg-black/5"}`}
+            aria-current={isActive ? "page" : undefined}
+          >
+            {pageNumber}
+          </a>
+        </li>
+      );
+    })}
   </ul>
-  {
-    urlNext ? (
-      <a
-        href={ensureTrailingSlash(urlNext)}
-        aria-label="Next page"
-        class="inline-flex min-h-[38px] min-w-[38px] items-center justify-center gap-x-1.5 rounded-lg px-2.5 py-2 text-sm"
-      >
-        <i class="icon-[tabler--chevron-right] icon-base"></i>
-      </a>
-    ) : (
-      ""
-    )
-  }
+  {urlNext ? (
+    <a
+      href={ensureTrailingSlash(urlNext)}
+      aria-label="Next page"
+      class="inline-flex min-h-[38px] min-w-[38px] items-center justify-center gap-x-1.5 rounded-lg px-2.5 py-2 text-sm hover:bg-black/5"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+    </a>
+  ) : null}
 </nav>

@@ -10,21 +10,19 @@ interface Props {
 const { post } = Astro.props;
 ---
 
-<div
-  class="card shadow-xl rounded-xl overflow-hidden transition-transform duration-500 hover:-translate-y-1 hover:scale-105"
->
+<div class="bg-white shadow-xl rounded-xl overflow-hidden transition-transform duration-500 hover:-translate-y-1 hover:scale-105">
   <a href={`/${post.data.slug}/`}>
     <figure>
       <OptimizedCover src={post.data.cover} alt={post.data.coverAlt} />
     </figure>
-    <div class="card-body">
+    <div class="p-4">
       <div class="flex items-center gap-1 text-xs">
-        {
-          post.data.tags?.map(tag => <span class="badge badge-outline">{tag}</span>)
-        } 
+        {post.data.tags?.map(tag => (
+          <span class="inline-block text-xs px-2 py-0.5 border border-current/20 rounded">{tag}</span>
+        ))}
       </div>
-      <p class="text-xs"><FormattedDate date={post.data.pubDate} /></p>
-      <h3 class="card-title">{post.data.title}</h3>
+      <p class="text-xs mt-2"><FormattedDate date={post.data.pubDate} /></p>
+      <h3 class="text-lg font-semibold mt-1">{post.data.title}</h3>
     </div>
   </a>
 </div>

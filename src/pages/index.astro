@@ -21,7 +21,7 @@ const recentPosts = allPosts.slice(0, 3);
     <meta name="description" content={SITE_DESCRIPTION} />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;450;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-primary: #F7F5F0;
@@ -60,6 +60,8 @@ const recentPosts = allPosts.slice(0, 3);
             line-height: 1.65;
             font-weight: 400;
             -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
         }
 
         /* Typography */
@@ -79,6 +81,7 @@ const recentPosts = allPosts.slice(0, 3);
             color: var(--text-secondary);
             font-size: 1.05rem;
             line-height: 1.7;
+            font-weight: 450;
         }
 
         a {

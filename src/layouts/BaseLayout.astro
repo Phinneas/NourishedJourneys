@@ -14,6 +14,8 @@ import "../assets/app.css";
       body {
         background-color: #F7F5F0 !important;
         color: #16213E;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
       }
       .page-bg {
         position: fixed;
@@ -25,11 +27,24 @@ import "../assets/app.css";
         pointer-events: none;
         z-index: -1;
       }
-      /* Override DaisyUI/Tailwind dark defaults if any */
       .prose {
         --tw-prose-body: #16213E;
         --tw-prose-headings: #16213E;
         --tw-prose-links: #8B9D83;
+        --tw-prose-bold: #16213E;
+        --tw-prose-counters: #16213E;
+        --tw-prose-bullets: #16213E;
+        --tw-prose-quotes: #16213E;
+        color: #16213E !important;
+      }
+      .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+        color: #16213E !important;
+      }
+      .prose p, .prose li, .prose td, .prose th {
+        color: #16213E !important;
+      }
+      .prose a {
+        color: #8B9D83 !important;
       }
     </style>
   </head>
@@ -38,12 +53,9 @@ import "../assets/app.css";
   >
     <div class="page-bg"></div>
     <Header />
-
-    <!-- 内容区域，确保其动态调整高度 -->
     <main class="flex-grow z-10 relative">
       <slot />
     </main>
-
     <Footer />
   </body>
 </html>

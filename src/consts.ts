@@ -5,8 +5,8 @@
 export const BRAND_NAME = "Nourished Journeys";
 export const SITE_TITLE = "Nourished Journeys";
 export const SITE_DESCRIPTION = "A place for calm thoughtful reflection, journaling ideas, meditation and breath work discovery.";
-export const LIGHT_THEME = 'forest';
-export const DARK_THEME = 'forest';
+export const LIGHT_THEME = 'light';
+export const DARK_THEME = 'light';
 
 // Tags Page Metadata, src/pages/tags/index.astro
 export const Tags_TITLE = "Nourished Journeys - All Topics";
@@ -45,7 +45,7 @@ export const FooterLinks = [
 
 // Social Links, src/components/Footer.astro
 export const SocialLinks = [
-  { href: "/rss.xml", icon: "icon-[tabler--rss]", label: "RSS" },
+  { href: "/rss.xml", label: "RSS" },
 ];
 
 // Search Page Metadata, src/pages/search.astro
