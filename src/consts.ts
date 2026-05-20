@@ -29,9 +29,16 @@ export function getCategoryMetadata(category: string) {
   };
 }
 
-// Header Links, src/components/Header.astro
+// Header Links with dropdown support
 export const HeaderLinks = [
   { href: "/", title: "Home" },
+  {
+    title: "Guides",
+    children: [
+      { href: "/page/1/", title: "All Guides" },
+      { href: "/tags/", title: "By Topic" },
+    ],
+  },
   { href: "/about/", title: "About" },
   { href: "/resources/", title: "Resources" },
 ];
