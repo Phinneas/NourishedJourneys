@@ -1103,8 +1103,18 @@ const recentPosts = allPosts.slice(0, 3);
                     <a href="/tags/">By Topic</a>
                 </div>
             </div>
-            <a href="/resources">Journal</a>
-            <a href="/about/">Method</a>
+            <div class="nav-dropdown">
+                <button>Journal <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
+                <div class="nav-dropdown-menu">
+                    <a href="/resources/">Download PDFs</a>
+                </div>
+            </div>
+            <div class="nav-dropdown">
+                <button>Method <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
+                <div class="nav-dropdown-menu">
+                    <a href="/about/">About</a>
+                </div>
+            </div>
             <a href="#newsletter" class="nav-cta">Get Weekly Prompts</a>
         </div>
     </nav>
@@ -1305,9 +1315,8 @@ const recentPosts = allPosts.slice(0, 3);
                 </div>
                 <div class="footer-links">
                     <a href="/page/1/">Guides</a>
+                    <a href="/resources/">Journal</a>
                     <a href="/about/">Method</a>
-                    <a href="/resources">Journal</a>
-                    <a href="/about/">About</a>
                     <a href="#newsletter">Newsletter</a>
                 </div>
             </div>

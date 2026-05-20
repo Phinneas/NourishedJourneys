@@ -30,8 +30,8 @@ export function getCategoryMetadata(category: string) {
 }
 
 // Header Links with dropdown support
+// "Journal" maps to /resources/ (download PDFs), "Method" maps to /about/
 export const HeaderLinks = [
-  { href: "/", title: "Home" },
   {
     title: "Guides",
     children: [
@@ -39,8 +39,18 @@ export const HeaderLinks = [
       { href: "/tags/", title: "By Topic" },
     ],
   },
-  { href: "/about/", title: "About" },
-  { href: "/resources/", title: "Resources" },
+  {
+    title: "Journal",
+    children: [
+      { href: "/resources/", title: "Download PDFs" },
+    ],
+  },
+  {
+    title: "Method",
+    children: [
+      { href: "/about/", title: "About" },
+    ],
+  },
 ];
 
 // Footer Links, src/components/Footer.astro
