@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: sans-serif; background: #FAFFD8; padding: 2rem; }
+  .row { display: flex; gap: 1rem; margin-bottom: 2rem; align-items: stretch; }
+  .swatch { flex: 1; height: 120px; border-radius: 12px; display: flex; flex-direction: column; justify-content: flex-end; padding: 0.75rem 1rem; }
+  .swatch span { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.05em; }
+  .label { font-size: 0.7rem; font-weight: 400; opacity: 0.75; margin-top: 2px; }
+  h2 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: #54577C; margin-bottom: 1rem; }
+
+  /* In-context usage examples */
+  .examples { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn { padding: 0.6rem 1.4rem; border-radius: 8px; font-size: 0.9rem; font-weight: 600; border: none; cursor: pointer; }
+  .tag { display: inline-block; padding: 0.25rem 0.75rem; border-radius: 100px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+  .card { background: #54577C; border-radius: 12px; padding: 1.5rem; width: 220px; }
+  .card h3 { font-size: 1.1rem; color: #FAFFD8; margin-bottom: 0.5rem; }
+  .card p { font-size: 0.8rem; color: rgba(250,255,216,0.65); }
+</style>
+</head>
+<body>
+
+  <h2>Current palette</h2>
+  <div class="row">
+    <div class="swatch" style="background:#FAFFD8; border: 1px solid #ddd;">
+      <span style="color:#54577C">#FAFFD8</span>
+      <span class="label" style="color:#54577C">Cream</span>
+    </div>
+    <div class="swatch" style="background:#ECFFB0; border: 1px solid #ddd;">
+      <span style="color:#54577C">#ECFFB0</span>
+      <span class="label" style="color:#54577C">Lime cream</span>
+    </div>
+    <div class="swatch" style="background:#9AA899;">
+      <span style="color:#fff">#9AA899</span>
+      <span class="label" style="color:#fff">Ash grey</span>
+    </div>
+    <div class="swatch" style="background:#54577C;">
+      <span style="color:#FAFFD8">#54577C</span>
+      <span class="label" style="color:#FAFFD8">Dusty grape</span>
+    </div>
+    <div class="swatch" style="background:#4A7B9D;">
+      <span style="color:#fff">#4A7B9D</span>
+      <span class="label" style="color:#fff">Steel blue</span>
+    </div>
+  </div>
+
+  <h2>The candidate</h2>
+  <div class="row">
+    <div class="swatch" style="background:#E8652A; max-width: 200px;">
+      <span style="color:#fff">#E8652A</span>
+      <span class="label" style="color:#fff">Terracotta / tangerine</span>
+    </div>
+    <div class="swatch" style="background:#FFB100; max-width: 200px;">
+      <span style="color:#fff">#FFB100</span>
+      <span class="label" style="color:#fff">Golden amber</span>
+    </div>
+  </div>
+
+  <h2>In context — how #E8652A could be used</h2>
+  <div class="examples" style="align-items:center; margin-bottom: 1.5rem;">
+    <button class="btn" style="background:#E8652A; color:#fff;">Browse the Guides →</button>
+    <span class="tag" style="background:#E8652A; color:#fff;">Breathwork</span>
+    <div style="display:flex; align-items:center; gap:0.5rem;">
+      <span style="font-size:1.6rem; font-weight:700; color:#E8652A; font-family:serif;">01</span>
+      <span style="font-size:0.85rem; color:#54577C;">Time Realistic</span>
+    </div>
+  </div>
+
+  <h2>Next to the dark grape card</h2>
+  <div class="examples">
+    <div class="card">
+      <span style="font-size:0.65rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#E8652A;">Meditation</span>
+      <h3>Mindfulness for Brain Fog</h3>
+      <p>Five-minute practices for real schedules, not hour-long retreats.</p>
+    </div>
+    <div class="card" style="background:#4A7B9D;">
+      <span style="font-size:0.65rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#E8652A;">Breathwork</span>
+      <h3>Box Breathing Reset</h3>
+      <p>Nervous system regulation you can do at your desk.</p>
+    </div>
+  </div>
+
+</body>
+</html>

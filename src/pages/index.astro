@@ -35,6 +35,7 @@ const recentPosts = allPosts.slice(0, 3);
             --accent-sand: #9AA899;
             --accent-sand-light: #B8C5B7;
             --accent-grape: #54577C;
+            --accent-amber: #FFB100;
             --accent-lime: #ECFFB0;
             --border: #C8DBA0;
             --border-light: #DFF2B8;
@@ -351,12 +352,12 @@ const recentPosts = allPosts.slice(0, 3);
         }
 
         .btn-primary {
-            background: var(--text-primary);
-            color: var(--bg-primary);
+            background: var(--accent-amber);
+            color: #1a1a1a;
         }
 
         .btn-primary:hover {
-            background: var(--accent-sage);
+            background: #e6a000;
             transform: translateY(-2px);
             box-shadow: var(--shadow-medium);
         }
@@ -416,7 +417,7 @@ const recentPosts = allPosts.slice(0, 3);
         .breathe-core {
             width: 22%;
             height: 22%;
-            background: var(--accent-sage);
+            background: var(--accent-amber);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -817,7 +818,7 @@ const recentPosts = allPosts.slice(0, 3);
             font-family: 'Fraunces', serif;
             font-size: 2.5rem;
             font-weight: 400;
-            color: var(--accent-sage-light);
+            color: var(--accent-amber);
             margin-bottom: 1rem;
             line-height: 1;
         }
