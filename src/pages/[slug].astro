@@ -17,6 +17,35 @@ const post = Astro.props;
 ---
 
 <BaseLayout title={post.data.title} description={post.data.description}>
+  <!-- Structured Data -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.data.title,
+    "description": post.data.description,
+    "image": post.data.cover ? new URL(post.data.cover, Astro.site).toString() : new URL("/hero-image.png", Astro.site).toString(),
+    "author": {
+      "@type": "Person",
+      "name": post.data.author || "Chester Beard"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Nourished Journeys",
+      "logo": {
+        "@type": "ImageObject",
+        "url": new URL("/hero-image.png", Astro.site).toString()
+      }
+    },
+    "datePublished": post.data.pubDate.toISOString(),
+    "dateModified": post.data.lastModified || post.data.pubDate.toISOString(),
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": new URL(`/${post.data.slug}/`, Astro.site).toString()
+    },
+    "keywords": post.data.tags.join(", "),
+    "articleSection": post.data.category[0] || "Wellness",
+    "about": "meditation, breathwork, journaling, mindfulness"
+  })}></script>
   <main>
     <article class="prose mx-auto max-w-4xl">
       <div class="text-center">

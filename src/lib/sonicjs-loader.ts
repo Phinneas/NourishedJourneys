@@ -8,6 +8,8 @@ export const sonicjsLoader = () => {
   return {
     name: 'sonicjs-loader',
     load: async ({ store, parseData }) => {
+      console.log('Loading content from SonicJS API...');
+
       // The SonicJS API does not filter by collectionId server-side,
       // so we fetch all published content and filter client-side.
       // limit=200 causes an API error, so we paginate with limit=100.
@@ -16,21 +18,41 @@ export const sonicjsLoader = () => {
       const pageSize = 100;
 
       while (true) {
-        const response = await fetch(
-          `${SONICJS_API_URL}/content?status=published&limit=${pageSize}&offset=${offset}`
-        );
-        const data = await response.json();
-        const items = data.data || [];
-        if (items.length === 0) break;
-        allItems = allItems.concat(items);
-        if (items.length < pageSize) break;
-        offset += pageSize;
+        try {
+          const controller = new AbortController();
+          const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout
+
+          const response = await fetch(
+            `${SONICJS_API_URL}/content?status=published&limit=${pageSize}&offset=${offset}`,
+            { signal: controller.signal }
+          );
+          clearTimeout(timeoutId);
+
+          if (!response.ok) {
+            console.warn(`SonicJS API returned status ${response.status} for offset ${offset}`);
+            break;
+          }
+
+          const data = await response.json();
+          const items = data.data || [];
+          console.log(`Fetched ${items.length} items at offset ${offset}`);
+
+          if (items.length === 0) break;
+          allItems = allItems.concat(items);
+          if (items.length < pageSize) break;
+          offset += pageSize;
+        } catch (error) {
+          console.error(`Error fetching content at offset ${offset}:`, error);
+          break;
+        }
       }
 
       // Filter to only posts belonging to the nourishedjourneys collection
       const posts = allItems.filter(
         (post: any) => post.collectionId === COLLECTION_ID
       );
+
+      console.log(`Found ${posts.length} posts after filtering for collection ${COLLECTION_ID}`);
 
       store.clear();
 
