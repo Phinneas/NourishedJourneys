@@ -1,0 +1,16 @@
+{
+  "slug": "nadi-shodhana",
+  "name": "Nadi Shodhana",
+  "tagline": "Alternate nostril breathing for balance and calm",
+  "goal": "calm",
+  "pattern": {
+    "inhale": 4,
+    "holdIn": 4,
+    "exhale": 4,
+    "holdOut": 0
+  },
+  "rounds": null,
+  "shortDescription": "Traditional alternate nostril technique to balance the nervous system and settle the mind.",
+  "blogSlug": null,
+  "accentColor": "#8B9D83"
+}

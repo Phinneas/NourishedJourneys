@@ -1,0 +1,79 @@
+---
+interface Props {
+  slug: string;
+  name: string;
+  tagline: string;
+  goal: string;
+  pattern: { inhale: number; holdIn: number; exhale: number; holdOut: number };
+  blogSlug: string | null;
+  accentColor: string;
+}
+
+const { slug, name, tagline, goal, pattern, blogSlug, accentColor } = Astro.props;
+
+const goalLabels: Record<string, string> = {
+  calm: "Calm",
+  focus: "Focus",
+  sleep: "Sleep",
+  energy: "Energy",
+  reset: "Reset",
+  foundation: "Foundation",
+};
+
+const goalColors: Record<string, string> = {
+  calm: "#8B9D83",
+  focus: "#5B8FA8",
+  sleep: "#7C6FA8",
+  energy: "#D4A373",
+  reset: "#A88B8B",
+  foundation: "#8B8FA8",
+};
+
+function fmt(n: number) {
+  return n % 1 === 0 ? String(n) : String(n);
+}
+
+const timing = [pattern.inhale, pattern.holdIn, pattern.exhale, pattern.holdOut]
+  .filter((n) => n > 0)
+  .map(fmt)
+  .join(" · ");
+---
+
+<div
+  class="bg-white rounded-xl shadow-xl overflow-hidden transition-transform duration-500 hover:-translate-y-1 hover:scale-105 flex flex-col"
+  data-goal={goal}
+>
+  <div class="p-6 flex flex-col flex-grow">
+    <div class="flex items-center gap-2 mb-3">
+      <span
+        class="inline-block text-xs font-medium px-2.5 py-0.5 rounded-full"
+        style={`background-color: ${goalColors[goal]}20; color: ${goalColors[goal]};`}
+      >
+        {goalLabels[goal]}
+      </span>
+      <span class="text-xs text-[#9A9A9A] tracking-wide">{timing}</span>
+    </div>
+    <h3 class="text-xl font-semibold text-[#16213E] mb-1" style={`font-family: 'Fraunces', Georgia, serif;`}>
+      {name}
+    </h3>
+    <p class="text-sm text-[#54577C] mb-5 flex-grow">{tagline}</p>
+    <div class="flex items-center gap-3 mt-auto">
+      <a
+        href={`/breathing-visualizer/${slug}/`}
+        class="inline-flex items-center px-4 py-2 text-sm font-medium rounded-lg text-white transition-opacity hover:opacity-90"
+        style={`background-color: ${accentColor};`}
+      >
+        Practice
+      </a>
+      {blogSlug && (
+        <a
+          href={`/${blogSlug}/`}
+          class="text-sm font-medium hover:underline"
+          style={`color: ${accentColor};`}
+        >
+          Read the guide →
+        </a>
+      )}
+    </div>
+  </div>
+</div>

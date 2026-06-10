@@ -1,0 +1,16 @@
+{
+  "slug": "belly-breathing",
+  "name": "Belly Breathing",
+  "tagline": "Diaphragmatic breath as the foundation of all practice",
+  "goal": "foundation",
+  "pattern": {
+    "inhale": 4,
+    "holdIn": 0,
+    "exhale": 6,
+    "holdOut": 0
+  },
+  "rounds": null,
+  "shortDescription": "Slow belly-first breathing to engage the diaphragm and shift from chest tension to full relaxation.",
+  "blogSlug": null,
+  "accentColor": "#8B8FA8"
+}

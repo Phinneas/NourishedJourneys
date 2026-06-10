@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import RelatedPostsCard from "@components/RelatedPostsCard.astro";
 import FormattedDate from "@components/FormattedDate.astro";
@@ -14,6 +14,7 @@ export async function getStaticPaths() {
 }
 
 const post = Astro.props;
+const { Content } = await render(post);
 ---
 
 <BaseLayout title={post.data.title} description={post.data.description}>
@@ -58,7 +59,7 @@ const post = Astro.props;
           )
         }
       </div>
-      <div set:html={post.data.content} />
+      <Content />
       <div class="flex gap-2 mt-8">
         {
           post.data.tags.map((tag) => (

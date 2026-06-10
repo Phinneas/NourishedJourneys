@@ -1,0 +1,16 @@
+{
+  "slug": "wim-hof",
+  "name": "Wim Hof Breathing",
+  "tagline": "Power breathing for energy and resilience",
+  "goal": "energy",
+  "pattern": {
+    "inhale": 1.5,
+    "holdIn": 0,
+    "exhale": 1.5,
+    "holdOut": 0
+  },
+  "rounds": 3,
+  "shortDescription": "30 deep breaths per round followed by a breath hold. Three rounds to build energy and tolerance.",
+  "blogSlug": null,
+  "accentColor": "#D4A373"
+}

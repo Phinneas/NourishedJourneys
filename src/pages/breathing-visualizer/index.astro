@@ -1,0 +1,139 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { SITE_TITLE } from "@consts";
+import { getCollection } from "astro:content";
+import TechniqueCard from "@components/TechniqueCard.astro";
+
+const techniques = await getCollection("techniques");
+techniques.sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+const goals = ["all", "calm", "focus", "sleep", "energy", "reset", "foundation"] as const;
+
+const goalLabels: Record<string, string> = {
+  all: "All",
+  calm: "Calm",
+  focus: "Focus",
+  sleep: "Sleep",
+  energy: "Energy",
+  reset: "Reset",
+  foundation: "Foundation",
+};
+
+const pageTitle = `Breathing Visualizer — ${SITE_TITLE}`;
+const pageDescription =
+  "An interactive breathing visualizer with 12 guided techniques. Choose a goal — calm, focus, sleep, energy, reset, or foundation — and follow the morphing circle to breathe better.";
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <div class="max-w-5xl mx-auto py-12 px-4">
+    {/* Header */}
+    <div class="text-center mb-10">
+      <h1 class="text-4xl md:text-5xl font-semibold text-[#16213E] mb-4" style="font-family:'Fraunces',Georgia,serif;">
+        Breathing Visualizer
+      </h1>
+      <p class="text-lg text-[#54577C] max-w-2xl mx-auto leading-relaxed">
+        A breathing visualizer gives your attention something to follow — a rhythm to match, a shape to watch,
+        a cue for when to inhale and when to let go. Instead of counting in your head, you breathe with the
+        circle. Choose a technique below, filter by how you want to feel, and press start.
+      </p>
+    </div>
+
+    {/* Goal filter */}
+    <div class="flex flex-wrap justify-center gap-2 mb-10" id="goal-filter">
+      {goals.map((g) => (
+        <button
+          data-filter={g}
+          class="goal-filter-btn px-4 py-2 text-sm font-medium rounded-full transition-colors"
+          style={g === "all" ? "background-color:#8B9D83;color:#fff;" : "background-color:#EDEAE3;color:#54577C;"}
+        >
+          {goalLabels[g]}
+        </button>
+      ))}
+    </div>
+
+    {/* Technique grid */}
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16" id="technique-grid">
+      {techniques.map((t) => (
+        <TechniqueCard
+          slug={t.data.slug}
+          name={t.data.name}
+          tagline={t.data.tagline}
+          goal={t.data.goal}
+          pattern={t.data.pattern}
+          blogSlug={t.data.blogSlug}
+          accentColor={t.data.accentColor}
+        />
+      ))}
+    </div>
+
+    {/* FAQ */}
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-2xl font-semibold text-[#16213E] mb-6 text-center" style="font-family:'Fraunces',Georgia,serif;">
+        Common questions
+      </h2>
+      <div class="space-y-5">
+        <div>
+          <h3 class="font-medium text-[#16213E] mb-1">What does a breathing visualizer do?</h3>
+          <p class="text-sm text-[#54577C] leading-relaxed">
+            It turns an abstract breathing pattern into a moving shape you can follow with your eyes.
+            The visual cue removes the need to count seconds in your head, which makes it easier to stay
+            present and maintain the rhythm — especially when you're stressed or distracted.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-medium text-[#16213E] mb-1">How long should I practice?</h3>
+          <p class="text-sm text-[#54577C] leading-relaxed">
+            Research suggests that even five minutes of structured breathing produces measurable effects
+            on heart rate variability and anxiety. Our sessions default to three minutes, with options
+            for one, five, or ten minutes depending on how much time you have.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-medium text-[#16213E] mb-1">Which technique should I start with?</h3>
+          <p class="text-sm text-[#54577C] leading-relaxed">
+            Box breathing is the most accessible starting point — four equal counts that are easy to
+            remember under pressure. If you want something simpler, try belly breathing or pursed lip
+            breathing, which have no holds and a longer, gentler exhale.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-medium text-[#16213E] mb-1">Can I use this instead of a meditation app?</h3>
+          <p class="text-sm text-[#54577C] leading-relaxed">
+            For basic breathwork, yes. The visualizer replaces the guided animation you'd get in an app
+            like Calm or Headspace — without subscriptions, downloads, or notifications. If you want
+            voice guidance, sleep stories, or longer courses, those apps still have a role.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const buttons = document.querySelectorAll(".goal-filter-btn");
+      const cards = document.querySelectorAll("#technique-grid > div[data-goal]");
+
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const filter = (btn as any).dataset.filter || "all";
+
+          buttons.forEach((b) => {
+            const el = b as any;
+            const active = el.dataset.filter === filter;
+            el.style.backgroundColor = active ? "#8B9D83" : "#EDEAE3";
+            el.style.color = active ? "#fff" : "#54577C";
+          });
+
+          cards.forEach((card) => {
+            const goal = (card as any).dataset.goal || "";
+            if (filter === "all" || goal === filter) {
+              (card as any).style.display = "";
+            } else {
+              (card as any).style.display = "none";
+            }
+          });
+        });
+      });
+    })();
+  </script>
+</BaseLayout>

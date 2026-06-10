@@ -1,0 +1,16 @@
+{
+  "slug": "coherent-breathing",
+  "name": "Coherent Breathing",
+  "tagline": "Six breaths per minute for nervous system harmony",
+  "goal": "calm",
+  "pattern": {
+    "inhale": 5.5,
+    "holdIn": 0,
+    "exhale": 5.5,
+    "holdOut": 0
+  },
+  "rounds": null,
+  "shortDescription": "Breathe at 5.5 seconds in and 5.5 seconds out to maximise heart rate variability and parasympathetic tone.",
+  "blogSlug": null,
+  "accentColor": "#8B9D83"
+}

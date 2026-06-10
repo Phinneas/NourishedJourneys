@@ -1,0 +1,16 @@
+{
+  "slug": "box-breathing",
+  "name": "Box Breathing",
+  "tagline": "Equal-ratio breathing for focus and calm",
+  "goal": "focus",
+  "pattern": {
+    "inhale": 4,
+    "holdIn": 4,
+    "exhale": 4,
+    "holdOut": 4
+  },
+  "rounds": null,
+  "shortDescription": "Four equal phases of 4 seconds each. The simplest entry point for regulated breathing.",
+  "blogSlug": "box-breathing",
+  "accentColor": "#5B8FA8"
+}

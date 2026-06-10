@@ -1,0 +1,16 @@
+{
+  "slug": "physiological-sigh",
+  "name": "Physiological Sigh",
+  "tagline": "Double inhale and long exhale for instant reset",
+  "goal": "reset",
+  "pattern": {
+    "inhale": 2.5,
+    "holdIn": 1.5,
+    "exhale": 6,
+    "holdOut": 1
+  },
+  "rounds": null,
+  "shortDescription": "Two quick inhales followed by a slow extended exhale to rapidly offload stress and reset arousal.",
+  "blogSlug": null,
+  "accentColor": "#A88B8B"
+}

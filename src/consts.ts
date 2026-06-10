@@ -37,6 +37,7 @@ export const HeaderLinks = [
     children: [
       { href: "/page/1/", title: "All Guides" },
       { href: "/tags/", title: "By Topic" },
+      { href: "/breathing-visualizer/", title: "Breathing Visualizer" },
     ],
   },
   {

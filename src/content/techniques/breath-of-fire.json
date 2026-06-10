@@ -1,0 +1,16 @@
+{
+  "slug": "breath-of-fire",
+  "name": "Breath of Fire",
+  "tagline": "Rapid diaphragmatic pumps for alertness",
+  "goal": "energy",
+  "pattern": {
+    "inhale": 0.75,
+    "holdIn": 0,
+    "exhale": 0.75,
+    "holdOut": 0
+  },
+  "rounds": null,
+  "shortDescription": "Short rhythmic exhales driven by the diaphragm to energise the body and clear mental fog.",
+  "blogSlug": null,
+  "accentColor": "#D4A373"
+}

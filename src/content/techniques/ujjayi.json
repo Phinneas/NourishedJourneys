@@ -1,0 +1,16 @@
+{
+  "slug": "ujjayi",
+  "name": "Ujjayi Breathing",
+  "tagline": "Ocean breath for grounded focus",
+  "goal": "focus",
+  "pattern": {
+    "inhale": 4,
+    "holdIn": 0,
+    "exhale": 6,
+    "holdOut": 0
+  },
+  "rounds": null,
+  "shortDescription": "A slight throat constriction creates an audible ocean sound, anchoring attention and extending the exhale.",
+  "blogSlug": null,
+  "accentColor": "#5B8FA8"
+}

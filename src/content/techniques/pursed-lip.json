@@ -1,0 +1,16 @@
+{
+  "slug": "pursed-lip",
+  "name": "Pursed Lip Breathing",
+  "tagline": "Slow exhale through pursed lips for respiratory ease",
+  "goal": "foundation",
+  "pattern": {
+    "inhale": 2,
+    "holdIn": 0,
+    "exhale": 4,
+    "holdOut": 0
+  },
+  "rounds": null,
+  "shortDescription": "Gentle inhale through the nose and slow exhale through pursed lips to keep airways open and reduce breathlessness.",
+  "blogSlug": null,
+  "accentColor": "#8B8FA8"
+}

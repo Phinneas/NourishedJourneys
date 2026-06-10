@@ -1,0 +1,16 @@
+{
+  "slug": "tummo",
+  "name": "Tummo Breathing",
+  "tagline": "Rapid fire breath to generate inner heat",
+  "goal": "energy",
+  "pattern": {
+    "inhale": 2,
+    "holdIn": 0,
+    "exhale": 1,
+    "holdOut": 0
+  },
+  "rounds": null,
+  "shortDescription": "Quick strong breaths to raise core temperature and activate the sympathetic system for alertness.",
+  "blogSlug": null,
+  "accentColor": "#D4A373"
+}

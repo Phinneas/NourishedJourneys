@@ -1,0 +1,16 @@
+{
+  "slug": "buteyko",
+  "name": "Buteyko Breathing",
+  "tagline": "Gentle reduced-volume breathing for calm",
+  "goal": "calm",
+  "pattern": {
+    "inhale": 3,
+    "holdIn": 0,
+    "exhale": 3,
+    "holdOut": 3
+  },
+  "rounds": null,
+  "shortDescription": "Soft nasal breathing with a controlled pause to normalise CO2 levels and reduce over-breathing.",
+  "blogSlug": null,
+  "accentColor": "#8B9D83"
+}

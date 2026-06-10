@@ -1,0 +1,54 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { SITE_TITLE } from "@consts";
+import { getCollection } from "astro:content";
+import BreathingVisualizer from "@components/BreathingVisualizer.astro";
+
+export async function getStaticPaths() {
+  const techniques = await getCollection("techniques");
+  return techniques.map((t) => ({
+    params: { slug: t.data.slug },
+    props: { technique: t.data },
+  }));
+}
+
+const { technique } = Astro.props;
+
+const pageTitle = `${technique.name} Breathing Visualizer — ${SITE_TITLE}`;
+const pageDescription = technique.shortDescription;
+
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <div class="max-w-3xl mx-auto py-10 px-4">
+    {/* Title */}
+    <div class="text-center mb-8">
+      <h1 class="text-3xl md:text-4xl font-semibold text-[#16213E] mb-2" style="font-family:'Fraunces',Georgia,serif;">
+        {technique.name}
+      </h1>
+      <p class="text-[#54577C]">{technique.tagline}</p>
+    </div>
+
+    {/* Visualizer */}
+    <BreathingVisualizer technique={technique} />
+
+    {/* Links */}
+    <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+      {technique.blogSlug && (
+        <a
+          href={`/${technique.blogSlug}/`}
+          class="text-sm font-medium hover:underline"
+          style={`color: ${technique.accentColor};`}
+        >
+          Want to go deeper? Read the guide →
+        </a>
+      )}
+      <a
+        href="/breathing-visualizer/"
+        class="text-sm font-medium text-[#54577C] hover:text-[#16213E] transition-colors"
+      >
+        ← Try another technique
+      </a>
+    </div>
+  </div>
+</BaseLayout>
