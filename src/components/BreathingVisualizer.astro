@@ -208,7 +208,7 @@ const patternDisplay = [
 
 <script>
   (function () {
-    const wrapper = document.querySelector(".breathing-visualizer-wrapper");
+    const wrapper = document.querySelector(".breathing-visualizer-wrapper") as HTMLElement | null;
     if (!wrapper) return;
 
     const technique = JSON.parse(wrapper.dataset.technique || "{}");
