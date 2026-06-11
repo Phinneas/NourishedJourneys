@@ -1,0 +1,14 @@
+---
+title: "Pursed Lip Breathing: Ease Shortness of Breath in Minutes"
+pubDate: "2025-07-10T10:00:00.000Z"
+description: "Pursed lip breathing is a simple technique that slows your breath and keeps airways open longer. It is especially helpful for COPD, asthma, and anxiety-related breathlessness."
+lastModified: "1776902167005"
+cover: "https://images.unsplash.com/photo-1518310383802-640c2de311b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=2000"
+coverAlt: "Person practicing gentle breathing exercises"
+category: []
+tags: []
+author: "Chester Beard"
+slug: "pursed-lip-breathing"
+---
+
+<p>Pursed lip breathing is one of the most accessible breathing techniques. It is used in pulmonary rehabilitation for COPD and asthma, but it also helps anyone who feels short of breath due to anxiety or exertion.</p><p>The technique works by creating back pressure in the airways during exhalation. This keeps the small air passages open longer, prevents airway collapse, and allows more complete emptying of the lungs.</p><h2 id="how-to-practice-pursed-lip-breathing">How to Practice Pursed Lip Breathing</h2><p>Follow these steps:</p><ul><li><strong>Step 1:</strong> Sit comfortably and relax your neck and shoulders.</li><li><strong>Step 2:</strong> Breathe in slowly through your nose for a count of 2. Keep your mouth closed.</li><li><strong>Step 3:</strong> Pucker your lips as if you are about to whistle or blow out a candle.</li><li><strong>Step 4:</strong> Exhale slowly and gently through your pursed lips for a count of 4. The exhale should be twice as long as the inhale.</li><li><strong>Step 5:</strong> Repeat for 5-10 minutes.</li></ul><h2 id="why-the-pursed-lip-exhale-works">Why the Pursed-Lip Exhale Works</h2><p>When you exhale through pursed lips, you create positive pressure in your airways. This prevents the small bronchioles from collapsing too early, which is a common problem in COPD and during anxious breathing.</p><p>The longer exhale also slows your overall breathing rate. This increases carbon dioxide levels slightly, which helps oxygen move from blood into tissues more efficiently.</p><h2 id="who-benefits-most">Who Benefits Most</h2><p>Pursed lip breathing is especially helpful for:</p><ul><li>People with COPD or chronic bronchitis</li><li>Anyone experiencing anxiety-related breathlessness</li><li>Older adults with reduced lung elasticity</li><li>People recovering from respiratory infections</li><li>Anyone who feels winded after mild activity</li></ul><h2 id="tips-for-best-results">Tips for Best Results</h2><p>Do not force the exhale. It should be gentle and relaxed, like softly blowing on hot soup. If you feel dizzy, return to normal breathing and try again with shorter counts.</p><p>Practice this technique during daily activities such as climbing stairs, walking, or doing household chores. Over time, it becomes automatic and prevents breathlessness before it starts.</p>
