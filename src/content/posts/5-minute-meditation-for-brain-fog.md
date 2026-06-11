@@ -3,6 +3,7 @@ title: "5-Minute Meditation for Brain Fog: Quick Relief That Actually Works"
 pubDate: "2025-07-15T03:32:57.000Z"
 description: "Scattered minds can't handle 20-minute meditation sessions - they need 5 focused minutes that actually work. When brain fog hits, traditional meditation advice "
 lastModified: "1776902163302"
+cover: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "5-Minute Meditation for Brain Fog: Quick Relief That Actually Works"
 category: []
 tags: []
