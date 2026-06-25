@@ -1,6 +1,37 @@
 User-agent: *
 Allow: /
 
+# Explicitly allow AI crawlers
+User-agent: AmazonBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Cloudflare-Crawler
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
 # Block crawling of search and tag pagination
 Disallow: /search
 Disallow: /page/*
