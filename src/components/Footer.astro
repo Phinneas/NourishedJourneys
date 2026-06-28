@@ -4,6 +4,86 @@ import { BRAND_NAME, FooterLinks } from "@consts";
 const today = new Date();
 ---
 
+<!-- Ask AI Section -->
+<section id="ask-ai" class="ask-ai-section">
+  <style>
+    .ask-ai-section {
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-top: 1px solid rgba(84, 87, 124, 0.12);
+      margin-top: 2rem;
+    }
+    .ask-ai-section h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: inherit;
+    }
+    .ask-ai-section p {
+      font-size: 0.95rem;
+      color: #9AA899;
+      margin-bottom: 1.5rem;
+    }
+    .ask-ai-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .ai-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border: 1px solid #C8DBA0;
+      background: #FFFFFF;
+      color: #54577C;
+      transition: all 0.2s ease;
+    }
+    .ai-button:hover {
+      border-color: #999;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 8px rgba(84, 87, 124, 0.08);
+    }
+    .ai-button.chatgpt:hover { border-color: #10a37f; color: #10a37f; }
+    .ai-button.claude:hover { border-color: #D4A373; color: #D4A373; }
+    .ai-icon { font-size: 1.1rem; }
+    @media (max-width: 480px) {
+      .ask-ai-buttons { flex-direction: column; align-items: stretch; }
+      .ai-button { justify-content: center; }
+    }
+  </style>
+  <h3>Not sure yet?</h3>
+  <p>Ask an AI for a second opinion on whether Nourished Journeys is right for you.</p>
+  <div class="ask-ai-buttons">
+    <a
+      href="https://chatgpt.com/?q=How%20would%20Nourished%20Journeys%20at%20https%3A%2F%2Fwww.nourishedjourneys.com%20help%20me%20start%20a%20meditation%2C%20breathwork%2C%20or%20journaling%20practice%2C%20and%20what%20makes%20it%20different%20from%20Headspace%20or%20Calm%3F%20Be%20honest%20about%20who%20it's%20best%20for%20and%20where%20it%20falls%20short."
+      target="_blank"
+      rel="noopener noreferrer"
+      class="ai-button chatgpt"
+      aria-label="Ask ChatGPT about Nourished Journeys"
+    >
+      <span class="ai-icon">💬</span>
+      <span>Ask ChatGPT</span>
+    </a>
+    <a
+      href="https://claude.ai/new?q=How%20would%20Nourished%20Journeys%20at%20https%3A%2F%2Fwww.nourishedjourneys.com%20help%20me%20start%20a%20meditation%2C%20breathwork%2C%20or%20journaling%20practice%2C%20and%20what%20makes%20it%20different%20from%20Headspace%20or%20Calm%3F%20Be%20honest%20about%20who%20it's%20best%20for%20and%20where%20it%20falls%20short."
+      target="_blank"
+      rel="noopener noreferrer"
+      class="ai-button claude"
+      aria-label="Ask Claude about Nourished Journeys"
+    >
+      <span class="ai-icon">🧠</span>
+      <span>Ask Claude</span>
+    </a>
+  </div>
+</section>
+
 <footer class="mx-auto mt-auto w-full max-w-[85rem] py-10">
   <nav class="mx-auto w-full max-w-[85rem] px-4" aria-label="Footer">
     <div class="flex flex-col items-center sm:flex-row sm:justify-between">
