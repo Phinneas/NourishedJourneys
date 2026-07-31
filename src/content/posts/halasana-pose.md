@@ -5,8 +5,8 @@ description: "Halasana, commonly known as Plow Pose, is a foundational yoga asan
 lastModified: "1776902158124"
 cover: "https://images.unsplash.com/photo-1628909586533-77fc0df08f61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDM5MXx8eW9nYSUyMHBsb3clMjBwb3NlfGVufDB8fHx8MTc0MjY2NDM1M3ww&ixlib=rb-4.0.3&q=80&w=2000"
 coverAlt: "Halasana (Plow Pose): Complete Guide to Benefits, Steps & Safety Tips"
-category: []
-tags: []
+category: ["Yoga"]
+tags: ["yoga"]
 author: "Chester Beard"
 slug: "halasana-pose"
 ---

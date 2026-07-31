@@ -5,8 +5,8 @@ description: "Most meditation apps assume you already have focus - but what if t
 lastModified: "1776902163096"
 cover: "https://images.unsplash.com/reserve/YEc7WB6ASDydBTw6GDlF_antalya-beach-lulu.jpg?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fG1lZGl0YXRpb258ZW58MHx8fHwxNzUxNTExNTQxfDA&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "Best Meditation Apps for Brain Fog: 7 Apps That Actually Clear Mental Cloudiness"
-category: []
-tags: []
+category: ["Meditation"]
+tags: ["meditation", "brain-fog", "apps"]
 author: "Chester Beard"
 slug: "best-meditation-apps-for-brain-fog-10-apps-that-actually-clear-mental-cloudiness"
 ---

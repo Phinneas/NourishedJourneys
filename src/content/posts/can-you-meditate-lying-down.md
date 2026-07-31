@@ -5,8 +5,8 @@ description: "You might wonder if you can meditate lying down instead of sitting
 lastModified: "1776902165982"
 cover: "https://images.unsplash.com/photo-1633616656958-c68fc1501f23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGx5aW5nJTIwZG93bnxlbnwwfHx8fDE3NTUyMTUyNDB8MA&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "Can You Meditate Lying Down?"
-category: []
-tags: []
+category: ["Meditation"]
+tags: ["meditation"]
 author: "Chester Beard"
 slug: "can-you-meditate-lying-down"
 ---

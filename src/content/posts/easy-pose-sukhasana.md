@@ -5,8 +5,8 @@ description: "Got it — we’ll keep it tight and balanced, roughly in line wit
 lastModified: "1776902158585"
 cover: "https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fG1lZGl0YXRpb258ZW58MHx8fHwxNzQyNTQ4OTI2fDA&ixlib=rb-4.0.3&q=80&w=2000"
 coverAlt: "Sukhasana (Easy Pose): Simple Guide to Benefits and Technique"
-category: []
-tags: []
+category: ["Yoga"]
+tags: ["yoga"]
 author: "Chester Beard"
 slug: "easy-pose-sukhasana"
 ---

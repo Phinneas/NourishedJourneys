@@ -5,8 +5,8 @@ description: "Understanding Divided Attention\n\nJoin us as we dive into the wor
 lastModified: "1776902162239"
 cover: "https://images.unsplash.com/photo-1520633118379-ad9254c9acf5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDR8fGRpdmlkZWR8ZW58MHx8fHwxNzQyNjY1NDAxfDA&ixlib=rb-4.0.3&q=80&w=2000"
 coverAlt: "Journey into Divided Attention"
-category: []
-tags: []
+category: ["Mental Clarity"]
+tags: ["focus"]
 author: "Chester Beard"
 slug: "divided-attention"
 ---

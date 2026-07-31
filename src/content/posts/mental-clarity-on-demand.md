@@ -5,8 +5,8 @@ description: "Life moves fast, and your mind often races even faster. Between ju
 lastModified: "1776902160987"
 cover: "https://images.unsplash.com/photo-1589149098258-3e9102cd63d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDh8fGNsYXJpdHl8ZW58MHx8fHwxNzQyNjY1MTY5fDA&ixlib=rb-4.0.3&q=80&w=2000"
 coverAlt: "How to Achieve Mental Clarity on Demand"
-category: []
-tags: []
+category: ["Mental Clarity"]
+tags: ["brain-fog"]
 author: "Chester Beard"
 slug: "mental-clarity-on-demand"
 ---

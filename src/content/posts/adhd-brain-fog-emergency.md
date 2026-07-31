@@ -5,8 +5,8 @@ description: "It's 2 PM, you have three deadlines, and your brain just... stoppe
 lastModified: "1776902163510"
 cover: "https://images.unsplash.com/photo-1461766705442-58d58276121a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI3fHxtZWRpdGF0aW9ufGVufDB8fHx8MTc1MTUxMTU0MXww&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "ADHD Brain Fog Emergency: 3 Techniques That Work When You Can't Think Straight"
-category: []
-tags: []
+category: ["Mental Clarity"]
+tags: ["brain-fog", "anxiety", "adhd"]
 author: "Chester Beard"
 slug: "adhd-brain-fog-emergency"
 ---

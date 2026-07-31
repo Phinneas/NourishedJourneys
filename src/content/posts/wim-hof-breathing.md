@@ -5,8 +5,8 @@ description: "Wim Hof breathing combines rapid inhalations, breath holds, and co
 lastModified: "1776902167007"
 cover: "https://images.unsplash.com/photo-1515894203077-9cd36032142f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "Cold water and breathing practice in nature"
-category: []
-tags: []
+category: ["Breathing"]
+tags: ["breathing"]
 author: "Chester Beard"
 slug: "wim-hof-breathing"
 ---

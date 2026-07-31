@@ -5,8 +5,8 @@ description: "Meditation often feels like a paradox. You're told not to think ab
 lastModified: "1776902161197"
 cover: "https://images.unsplash.com/photo-1548687979-86cda6b97310?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDQzfHxtZWRpdGF0aW9uJTIwdGhpbmtpbmd8ZW58MHx8fHwxNzQyNjY0MTcwfDA&ixlib=rb-4.0.3&q=80&w=2000"
 coverAlt: "What is the Purpose of Meditation if You Are Not Supposed to Think About Anything"
-category: []
-tags: []
+category: ["Meditation"]
+tags: ["meditation"]
 author: "Chester Beard"
 slug: "purpose-of-meditation"
 ---

@@ -5,8 +5,8 @@ description: "If you've been struggling with that frustrating feeling of thinkin
 lastModified: "1776902163722"
 cover: "https://images.unsplash.com/photo-1476611317561-60117649dd94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fHByZXNlbnQlMjBtb21lbnR8ZW58MHx8fHwxNzUxNzU3Mzg2fDA&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "Mindfulness for Brain Fog: How Present-Moment Awareness Clears Mental Cloudiness"
-category: []
-tags: []
+category: ["Meditation"]
+tags: ["mindfulness", "brain-fog"]
 author: "Chester Beard"
 slug: "mindfulness-for-brain-fog-2"
 ---

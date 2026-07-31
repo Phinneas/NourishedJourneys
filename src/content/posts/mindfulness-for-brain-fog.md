@@ -5,8 +5,8 @@ description: "Mindfulness for brain fog works differently than formal meditation
 lastModified: "1776902162814"
 cover: "https://images.unsplash.com/photo-1447452001602-7090c7ab2db3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "Use Mindfulness for Brain Fog and Restore Your Mental Clarity Naturally"
-category: []
-tags: []
+category: ["Meditation"]
+tags: ["mindfulness", "brain-fog"]
 author: "Chester Beard"
 slug: "mindfulness-for-brain-fog"
 ---

@@ -5,8 +5,8 @@ description: "What do Albert Einstein, Simone Biles, Frida Kahlo, and Michelle O
 lastModified: "1776902157673"
 cover: "https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDE4fHxqb3VybmFsfGVufDB8fHx8MTc0MjY2MzkxNHww&ixlib=rb-4.0.3&q=80&w=2000"
 coverAlt: "12 Life Changing Reasons to Why start a Journal"
-category: []
-tags: []
+category: ["Journaling"]
+tags: ["journaling", "beginners"]
 author: "Chester Beard"
 slug: "why-start-a-journal"
 ---

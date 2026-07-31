@@ -5,8 +5,8 @@ description: "Morning Pages Didn’t Work for Me. Brain Dump Journaling Did. Her
 lastModified: "1776902156867"
 cover: "https://images.unsplash.com/photo-1605902394069-ff2ae2430e62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDIwfHxicmFpbiUyMGR1bXB8ZW58MHx8fHwxNzQyMjc4ODc2fDA&ixlib=rb-4.0.3&q=80&w=2000"
 coverAlt: "Morning Pages Didn't Work for Me. Brain Dump Journaling Did."
-category: []
-tags: []
+category: ["Journaling"]
+tags: ["journaling"]
 author: "Chester Beard"
 slug: "brain-dump-journaling"
 ---

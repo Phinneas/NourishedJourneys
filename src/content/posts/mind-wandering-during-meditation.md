@@ -5,8 +5,8 @@ description: "Mind Wandering During Meditation: How an Anchor Transformed My Pra
 lastModified: "1776902161401"
 cover: "https://images.unsplash.com/photo-1700659145327-65692f7a6e71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI2fHxtaW5kJTIwd2FuZGVyaW5nfGVufDB8fHx8MTc0MjY2NTIxOHww&ixlib=rb-4.0.3&q=80&w=2000"
 coverAlt: "What Exactly Is Mind-Wandering and How It Impacts Focus and Productivity"
-category: []
-tags: []
+category: ["Meditation"]
+tags: ["meditation", "focus"]
 author: "Chester Beard"
 slug: "mind-wandering-during-meditation"
 ---

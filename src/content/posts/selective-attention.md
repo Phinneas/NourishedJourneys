@@ -5,8 +5,8 @@ description: "Understanding Selective Attention\n\nSelective attention is our br
 lastModified: "1776902160752"
 cover: "https://images.unsplash.com/photo-1631961890892-d8d24f0b6e04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fHNlbGVjdGl2ZXxlbnwwfHx8fDE3NDI2NjUxMzF8MA&ixlib=rb-4.0.3&q=80&w=2000"
 coverAlt: "Embracing Selective Attention"
-category: []
-tags: []
+category: ["Mental Clarity"]
+tags: ["focus"]
 author: "Chester Beard"
 slug: "selective-attention"
 ---

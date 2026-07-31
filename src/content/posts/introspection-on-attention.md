@@ -5,8 +5,8 @@ description: "Understanding Attention and Introspection\n\nWhen we're on this pa
 lastModified: "1776902161617"
 cover: "https://images.unsplash.com/photo-1604078893234-ff3a1a5d5292?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGludHJvc3BlY3Rpb258ZW58MHx8fHwxNzQyNjY1Mjg2fDA&ixlib=rb-4.0.3&q=80&w=2000"
 coverAlt: "Our Journey of Introspection on Attention"
-category: []
-tags: []
+category: ["Mental Clarity"]
+tags: ["focus", "self-reflection"]
 author: "Chester Beard"
 slug: "introspection-on-attention"
 ---

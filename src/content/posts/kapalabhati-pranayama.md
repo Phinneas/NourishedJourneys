@@ -5,8 +5,8 @@ description: "The first time I tried Kapalabhati breathing, I was skeptical. How
 lastModified: "1776902158792"
 cover: "https://images.unsplash.com/photo-1591259354202-d1e6123e7b66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fHByYW5hfGVufDB8fHx8MTc0MjY2NDU0Mnww&ixlib=rb-4.0.3&q=80&w=2000"
 coverAlt: "Kapalabhati (Skull Shining Breath): Complete Guide to Benefits and Technique"
-category: []
-tags: []
+category: ["Breathing"]
+tags: ["breathing"]
 author: "Chester Beard"
 slug: "kapalabhati-pranayama"
 ---

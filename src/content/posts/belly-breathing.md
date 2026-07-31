@@ -5,8 +5,8 @@ description: "Belly breathing, or diaphragmatic breathing, is the simplest way t
 lastModified: "1776902167001"
 cover: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "Person practicing diaphragmatic breathing in a relaxed pose"
-category: []
-tags: []
+category: ["Breathing"]
+tags: ["breathing"]
 author: "Chester Beard"
 slug: "belly-breathing"
 ---

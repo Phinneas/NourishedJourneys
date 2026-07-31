@@ -5,8 +5,8 @@ description: "Starting something new can feel overwhelming but journaling for be
 lastModified: "1776902165585"
 cover: "https://images.unsplash.com/photo-1669063915304-ec2ae7fa5047?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDQ2fHxiZWdpbm5lcnMlMjBtaW5kfGVufDB8fHx8MTc1NTIxNTAwM3ww&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "Journaling for Beginners Simple Tips and Benefits to Start Your Journaling Journey Today"
-category: []
-tags: []
+category: ["Journaling"]
+tags: ["journaling", "beginners"]
 author: "Chester Beard"
 slug: "journaling-for-beginners-2"
 ---

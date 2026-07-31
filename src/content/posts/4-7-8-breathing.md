@@ -5,8 +5,8 @@ description: "4-7-8 breathing is a quick relaxation technique that reduces anxie
 lastModified: "1776902167000"
 cover: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "Person breathing calmly in a peaceful setting"
-category: []
-tags: []
+category: ["Breathing"]
+tags: ["breathing"]
 author: "Chester Beard"
 slug: "4-7-8-breathing"
 ---

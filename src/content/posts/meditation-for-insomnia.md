@@ -5,8 +5,8 @@ description: "Struggling to fall asleep can leave you drained and frustrated. Yo
 lastModified: "1776902165777"
 cover: "https://images.unsplash.com/photo-1675445631097-81b9b56d96fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDE5fHxpbnNvbXxlbnwwfHx8fDE3NTUyMTUxMTh8MA&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "Meditation for Insomnia to Beat Sleepless Nights"
-category: []
-tags: []
+category: ["Meditation"]
+tags: ["meditation", "sleep"]
 author: "Chester Beard"
 slug: "meditation-for-insomnia"
 ---

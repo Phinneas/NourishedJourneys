@@ -1,54 +1,10 @@
 User-agent: *
 Allow: /
 
-# Explicitly allow AI crawlers
-User-agent: AmazonBot
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: Applebot
-Allow: /
-
-User-agent: Applebot-Extended
-Allow: /
-
-User-agent: Bytespider
-Allow: /
-
-User-agent: Cloudflare-Crawler
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: Meta-ExternalAgent
-Allow: /
-
-User-agent: GPTBot
-Allow: /
-
-# Block crawling of search and tag pagination
+# Block low-value and duplicate-prone paths from crawling
 Disallow: /search
 Disallow: /page/*
-Disallow: /tag/*/
-Disallow: /tags/*/
-Disallow: /category/*/
-
-# Block development/test URLs
 Disallow: /*?*
-
-# Allow important pages
-Allow: /about/
-Allow: /resources/
-Allow: /box-breathing/
 
 # Sitemap
 Sitemap: https://www.nourishedjourneys.com/sitemap-index.xml
-
-# Crawl delay to be respectful
-Crawl-delay: 1

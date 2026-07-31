@@ -5,8 +5,8 @@ description: "Journal prompts give you a direct way to start writing when you fe
 lastModified: "1776902165194"
 cover: "https://images.unsplash.com/photo-1653569693215-3b1fc81d2b7f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGpvdXJuYWwlMjBwcm9tcHRzfGVufDB8fHx8MTc1NTIxNDc0Nnww&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "Try these Journal Prompts for Creativity and Self-Discovery"
-category: []
-tags: []
+category: ["Journaling"]
+tags: ["journaling", "creativity"]
 author: "Chester Beard"
 slug: "journal-prompts-for-creativity"
 ---

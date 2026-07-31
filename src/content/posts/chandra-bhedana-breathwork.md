@@ -5,8 +5,8 @@ description: "Chandra Bhedana breathing is among the many types of yogic breathi
 lastModified: "1776902159483"
 cover: "https://images.unsplash.com/photo-1713429204572-8a951faffa74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGJyZWF0aHdvcmt8ZW58MHx8fHwxNzQyNjY0Njg5fDA&ixlib=rb-4.0.3&q=80&w=2000"
 coverAlt: "Chandra Bhedana Breathwork"
-category: []
-tags: []
+category: ["Breathing"]
+tags: ["breathing"]
 author: "Chester Beard"
 slug: "chandra-bhedana-breathwork"
 ---

@@ -5,8 +5,8 @@ description: "I wake up some mornings with fragments of dreams still fresh in my
 lastModified: "1776902164759"
 cover: "https://images.unsplash.com/photo-1536893827774-411e1dc7c902?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGRyZWFtc3xlbnwwfHx8fDE3NTUyMTQ4MjF8MA&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "A Dream Journal Boosts Creativity, and Insight"
-category: []
-tags: []
+category: ["Journaling"]
+tags: ["journaling", "creativity"]
 author: "Chester Beard"
 slug: "dream-journal"
 ---

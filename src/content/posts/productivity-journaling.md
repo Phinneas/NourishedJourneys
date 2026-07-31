@@ -5,8 +5,8 @@ description: "Productivity journaling keeps me focused and clear about my goals.
 lastModified: "1776902165388"
 cover: "https://images.unsplash.com/photo-1634746027343-985ad425b8b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDUxfHxqb3VybmFsaW5nfGVufDB8fHx8MTc1NTIxNDkyNnww&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "How Productivity Journaling Can Supercharge Your Focus and Goals"
-category: []
-tags: []
+category: ["Journaling"]
+tags: ["journaling", "productivity"]
 author: "Chester Beard"
 slug: "productivity-journaling"
 ---

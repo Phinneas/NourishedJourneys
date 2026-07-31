@@ -5,8 +5,8 @@ description: "The Surya Bhedan Kumbhaka is a breathing technique from Pranayama.
 lastModified: "1776902159686"
 cover: "https://images.unsplash.com/photo-1717002880128-c60e2074cc17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDcyfHxub3N0cmlsJTIwYnJlYXRoaW5nfGVufDB8fHx8MTc0MjY2NDc5OHww&ixlib=rb-4.0.3&q=80&w=2000"
 coverAlt: "Pingala Nadi and Surya Bhedana"
-category: []
-tags: []
+category: ["Breathing"]
+tags: ["breathing"]
 author: "Chester Beard"
 slug: "alternate-nostril-breathing"
 ---

@@ -5,8 +5,8 @@ description: "Finding balance and calm can seem elusive. Breathing techniques li
 lastModified: "1776902159892"
 cover: "https://images.unsplash.com/photo-1558554142-0b016c857381?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDN8fGJyZWF0aHxlbnwwfHx8fDE3NDI2NjQ4NDV8MA&ixlib=rb-4.0.3&q=80&w=2000"
 coverAlt: "Shitali Breath"
-category: []
-tags: []
+category: ["Breathing"]
+tags: ["breathing"]
 author: "Chester Beard"
 slug: "shitali-breath"
 ---

@@ -5,8 +5,8 @@ description: "A gratitude journal helps you notice what’s good in your life. E
 lastModified: "1776902164344"
 cover: "https://images.unsplash.com/photo-1569360531163-a61fa3da86ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDN8fGdyYXRpdHVkZSUyMGpvdXJuYWx8ZW58MHx8fHwxNzUyMTg2NDMyfDA&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "Starting a Gratitude Journal Can Boost Your Mood, Sleep, and Daily Happiness"
-category: []
-tags: []
+category: ["Journaling"]
+tags: ["journaling", "beginners", "gratitude"]
 author: "Chester Beard"
 slug: "starting-a-gratitude-journal"
 ---

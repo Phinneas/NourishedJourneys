@@ -5,8 +5,8 @@ description: "Mindfulness Journaling: From Morning Pages to Present-Moment Aware
 lastModified: "1776902159238"
 cover: "https://images.unsplash.com/photo-1471520201477-47a62a269a87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDV8fG1pbmRmdWxuZXNzfGVufDB8fHx8MTc0MjY2NDY0OXww&ixlib=rb-4.0.3&q=80&w=2000"
 coverAlt: "Mindfulness Journaling and Building your self-awareness"
-category: []
-tags: []
+category: ["Journaling"]
+tags: ["mindfulness", "journaling"]
 author: "Chester Beard"
 slug: "mindfulness-journaling"
 ---

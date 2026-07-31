@@ -5,8 +5,8 @@ description: "The physiological sigh is a two-inhale exhale pattern that rapidly
 lastModified: "1776902167004"
 cover: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "Person taking a deep relieving breath outdoors"
-category: []
-tags: []
+category: ["Breathing"]
+tags: ["breathing"]
 author: "Chester Beard"
 slug: "physiological-sigh"
 ---

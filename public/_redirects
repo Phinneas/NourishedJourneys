@@ -1,0 +1,11 @@
+# Route consolidation redirects (301) — absorb duplicate URLs removed from the build.
+# Duplicate post route /posts/{slug}/ -> canonical /{slug}/
+/posts/:slug/  /:slug/  301
+/posts/:slug   /:slug/  301
+
+# Duplicate tag route /tag/{tag}/ -> canonical /tags/{tag}/
+/tag/:tag/     /tags/:tag/1/  301
+/tag/:tag/:page/  /tags/:tag/:page/  301
+
+# Add legacy 404 redirects from GSC's exact URL export below this line, e.g.:
+# /old-ghost-path/  /new-path/  301

@@ -5,8 +5,8 @@ description: "A self reflection journal helps you see your thoughts and actions 
 lastModified: "1776902164552"
 cover: "https://images.unsplash.com/photo-1658279366796-e0c28623cd27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDE3fHxzZWxmJTIwcmVmbGVjdGlvbnxlbnwwfHx8fDE3NTUyMTQ3OTF8MA&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "Start a Self Reflection Journal, Now"
-category: []
-tags: []
+category: ["Journaling"]
+tags: ["journaling", "self-reflection"]
 author: "Chester Beard"
 slug: "self-reflection-journal"
 ---

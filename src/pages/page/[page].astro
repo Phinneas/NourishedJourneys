@@ -46,7 +46,7 @@ export async function getStaticPaths() {
 const { page } = Astro.props;
 ---
 
-<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION} noIndex={page.currentPage > 1}>
+<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION} noIndex={page.currentPage > 1} canonical={page.currentPage === 1 ? "/" : undefined}>
   {
     page.currentPage === 1 ? (
       <>

@@ -5,8 +5,8 @@ description: "Buteyko breathing is a therapeutic technique that reduces over-bre
 lastModified: "1776902167002"
 cover: "https://images.unsplash.com/photo-1515023115689-589c33041697?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "Calm outdoor breathing practice"
-category: []
-tags: []
+category: ["Breathing"]
+tags: ["breathing"]
 author: "Chester Beard"
 slug: "buteyko-breathing"
 ---

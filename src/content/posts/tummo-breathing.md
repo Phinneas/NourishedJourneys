@@ -5,8 +5,8 @@ description: "Tummo breathing is an ancient Tibetan technique that generates bod
 lastModified: "1776902167006"
 cover: "https://images.unsplash.com/photo-1515894203077-9cd36032142f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "Mountain meditation practice in cold environment"
-category: []
-tags: []
+category: ["Breathing"]
+tags: ["breathing"]
 author: "Chester Beard"
 slug: "tummo-breathing"
 ---

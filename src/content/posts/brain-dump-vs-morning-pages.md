@@ -5,8 +5,8 @@ description: "When your mind is racing, it's hard to focus. You have a dozen tab
 lastModified: "1776902166579"
 cover: "https://images.unsplash.com/photo-1531072901881-d644216d4bf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI2fHxtb3JuaW5nJTIwcGFnZXN8ZW58MHx8fHwxNzU2Nzk2NDIyfDA&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "Brain Dump vs Morning Pages"
-category: []
-tags: []
+category: ["Journaling"]
+tags: ["journaling"]
 author: "Chester Beard"
 slug: "brain-dump-vs-morning-pages"
 ---

@@ -5,8 +5,8 @@ description: "Ujjayi breath, commonly known as \"ocean breath\" or \"victorious 
 lastModified: "1776902158343"
 cover: "https://images.unsplash.com/photo-1602276507500-600178f63aae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDR8fHlvZ2ElMjBicmVhdGhpbmd8ZW58MHx8fHwxNzQyNjY0NDE1fDA&ixlib=rb-4.0.3&q=80&w=2000"
 coverAlt: "Ujjayi Breath (Ocean Breath): Complete Guide to This Powerful Breathing Technique"
-category: []
-tags: []
+category: ["Breathing"]
+tags: ["breathing", "yoga"]
 author: "Chester Beard"
 slug: "ocean-breath-in-yoga"
 ---

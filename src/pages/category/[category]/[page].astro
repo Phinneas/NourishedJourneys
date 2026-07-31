@@ -41,7 +41,7 @@ const { page } = Astro.props;
 const { title, description } = getCategoryMetadata(params.category);
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} noIndex={page.currentPage > 1}>
   <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
     {page.data.map((post) => <PostCard post={post} />)}
   </div>

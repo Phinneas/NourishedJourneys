@@ -5,8 +5,8 @@ description: "Understanding Attention Control\n\n\nBasics of Attention\n\nWhen w
 lastModified: "1776902160301"
 cover: "https://images.unsplash.com/photo-1612040732989-429063a90adf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDI5fHxhdHRlbnRpb258ZW58MHx8fHwxNzQyNjUyNjI3fDA&ixlib=rb-4.0.3&q=80&w=2000"
 coverAlt: "Attention Control Strategies"
-category: []
-tags: []
+category: ["Mental Clarity"]
+tags: ["focus"]
 author: "Chester Beard"
 slug: "attention-control-strategies"
 ---

@@ -5,8 +5,8 @@ description: "Key Differences, Benefits, and How to Choose the Right Practice\n\
 lastModified: "1776902166184"
 cover: "https://images.unsplash.com/photo-1461468611824-46457c0e11fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDQ4fHxtZWRpdGF0aW9ufGVufDB8fHx8MTc1NTIxNjE3Mnww&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "Mindfulness vs Meditation"
-category: []
-tags: []
+category: ["Meditation"]
+tags: ["meditation", "mindfulness"]
 author: "Chester Beard"
 slug: "mindfulness-vs-meditation"
 ---

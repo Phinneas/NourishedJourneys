@@ -5,8 +5,8 @@ description: "Tips to Start, Set Goals, and Build a Lasting Habit\n\nMeditation 
 lastModified: "1776902166385"
 cover: "https://images.unsplash.com/photo-1742672870196-d79b916ef37d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDEyfHxzdGFydGluZ3xlbnwwfHx8fDE3NTUyMTYyNzh8MA&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "How Long Should Beginners Meditate?"
-category: []
-tags: []
+category: ["Meditation"]
+tags: ["meditation", "beginners"]
 author: "Chester Beard"
 slug: "how-long-should-beginners-meditate"
 ---

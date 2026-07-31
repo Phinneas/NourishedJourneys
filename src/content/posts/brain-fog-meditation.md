@@ -5,8 +5,8 @@ description: "You re-read the same email three times and still couldn't tell som
 lastModified: "1776902162563"
 cover: "https://images.unsplash.com/photo-1565458238579-bfaf286c0be8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDMxfHxjb25mdXNlZCUyMGZhY2V8ZW58MHx8fHwxNzUxMzY3OTM2fDA&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "Brain Fog Meditation to Clear Mental Cloudiness"
-category: []
-tags: []
+category: ["Meditation"]
+tags: ["meditation", "brain-fog"]
 author: "Chester Beard"
 slug: "brain-fog-meditation"
 ---

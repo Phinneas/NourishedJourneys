@@ -5,8 +5,8 @@ description: "Picture this: Your colleague criticizes your work in front of the 
 lastModified: "1776902165000"
 cover: "https://images.unsplash.com/photo-1620295153878-8e6026f3be98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDh8fGRpc2NpcGxpbmV8ZW58MHx8fHwxNzUyMjc5MjA3fDA&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "Conscious Discipline Daily Prompts for a 66 Day Remake"
-category: []
-tags: []
+category: ["Journaling"]
+tags: ["journaling"]
 author: "Chester Beard"
 slug: "conscious-discipline-daily-prompts"
 ---

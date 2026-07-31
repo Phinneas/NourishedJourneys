@@ -5,8 +5,8 @@ description: "\n\n\n\n\n\nEisenhower matrix\n\n\nAfter your brain dump, sort eac
 lastModified: "1776902166793"
 cover: "https://images.unsplash.com/photo-1577401239170-897942555fb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDUwfHxicmFpbnxlbnwwfHx8fDE3NTY4NTQwNDd8MA&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "How to Brain Dump"
-category: []
-tags: []
+category: ["Journaling"]
+tags: ["journaling", "beginners"]
 author: "Chester Beard"
 slug: "how-to-brain-dump"
 ---

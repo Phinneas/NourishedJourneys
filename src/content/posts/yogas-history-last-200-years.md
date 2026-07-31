@@ -5,8 +5,8 @@ description: "What is the history of yoga?\n\nThe history of yoga dates back tho
 lastModified: "1776902157438"
 cover: "https://images.unsplash.com/photo-1732257903611-0e8a66195687?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDY3fHx2aXNobnV8ZW58MHx8fHwxNzQxMjE4NDc3fDA&ixlib=rb-4.0.3&q=80&w=2000"
 coverAlt: "A Journey Through Yoga's Last 200 Years"
-category: []
-tags: []
+category: ["Yoga"]
+tags: ["yoga", "history"]
 author: "Chester Beard"
 slug: "yogas-history-last-200-years"
 ---

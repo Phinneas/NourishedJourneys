@@ -5,8 +5,8 @@ description: "Coherent breathing, or resonant breathing, balances your heart rat
 lastModified: "1776902167003"
 cover: "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "Peaceful meditation and breathing practice"
-category: []
-tags: []
+category: ["Breathing"]
+tags: ["breathing"]
 author: "Chester Beard"
 slug: "coherent-breathing"
 ---

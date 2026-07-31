@@ -5,8 +5,8 @@ description: "Pursed lip breathing is a simple technique that slows your breath 
 lastModified: "1776902167005"
 cover: "https://images.unsplash.com/photo-1518310383802-640c2de311b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "Person practicing gentle breathing exercises"
-category: []
-tags: []
+category: ["Breathing"]
+tags: ["breathing"]
 author: "Chester Beard"
 slug: "pursed-lip-breathing"
 ---

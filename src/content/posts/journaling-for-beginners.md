@@ -5,8 +5,8 @@ description: "Three years ago, I was drowning in stress, making the same mistake
 lastModified: "1776902159027"
 cover: "https://images.unsplash.com/photo-1516381548400-349d680edb56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDV8fHN0YXJ0fGVufDB8fHx8MTc0MjY2NDU5OHww&ixlib=rb-4.0.3&q=80&w=2000"
 coverAlt: "Why Start a Journal? 7 Life-Changing Benefits of Daily Journaling"
-category: []
-tags: []
+category: ["Journaling"]
+tags: ["journaling", "beginners"]
 author: "Chester Beard"
 slug: "journaling-for-beginners"
 ---

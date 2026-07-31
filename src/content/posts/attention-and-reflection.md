@@ -5,8 +5,8 @@ description: "Attention and Reflection: What I Learned When My Mind Stopped Work
 lastModified: "1776902160549"
 cover: "https://images.unsplash.com/photo-1509029032154-54ba8b3216d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDV8fHJlZmxlY3Rpb258ZW58MHx8fHwxNzQyNjY1MDEwfDA&ixlib=rb-4.0.3&q=80&w=2000"
 coverAlt: "Attention and Reflection"
-category: []
-tags: []
+category: ["Mental Clarity"]
+tags: ["focus", "self-reflection"]
 author: "Chester Beard"
 slug: "attention-and-reflection"
 ---

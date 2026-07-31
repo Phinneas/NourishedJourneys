@@ -5,8 +5,8 @@ description: "Scattered minds can't handle 20-minute meditation sessions - they 
 lastModified: "1776902163302"
 cover: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "5-Minute Meditation for Brain Fog: Quick Relief That Actually Works"
-category: []
-tags: []
+category: ["Meditation"]
+tags: ["meditation", "brain-fog"]
 author: "Chester Beard"
 slug: "5-minute-meditation-for-brain-fog"
 ---

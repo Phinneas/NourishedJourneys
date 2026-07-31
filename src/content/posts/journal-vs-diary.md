@@ -5,8 +5,8 @@ description: "Most people use the words interchangeably. You kept a diary as a k
 lastModified: "1776902157886"
 cover: "https://images.unsplash.com/photo-1518081963661-980bed44215c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDMxfHxqb3VybmFsJTIwdnMlMjBkaWFyeXxlbnwwfHx8fDE3NDI2NjQwNDV8MA&ixlib=rb-4.0.3&q=80&w=2000"
 coverAlt: "Journal vs Diary and Which Maybe Right for You"
-category: []
-tags: []
+category: ["Journaling"]
+tags: ["journaling"]
 author: "Chester Beard"
 slug: "journal-vs-diary"
 ---

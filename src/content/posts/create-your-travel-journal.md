@@ -5,8 +5,8 @@ description: "I've always believed that my travel experiences deserve more than 
 lastModified: "1776902163926"
 cover: "https://images.unsplash.com/photo-1530789253388-582c481c54b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDV8fHRyYXZlbHxlbnwwfHx8fDE3NTIxNjcyODd8MA&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "Create your Travel Journal And Capture Every Adventure"
-category: []
-tags: []
+category: ["Journaling"]
+tags: ["journaling", "creativity"]
 author: "Chester Beard"
 slug: "create-your-travel-journal"
 ---

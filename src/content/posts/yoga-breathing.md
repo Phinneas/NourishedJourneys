@@ -5,8 +5,8 @@ description: "Yoga breathing, or pranayama, is an ancient practice that involves
 lastModified: "1776902160086"
 cover: "https://images.unsplash.com/photo-1600618528240-fb9fc964b853?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDIxfHx5b2dhJTIwYnJlYXRoaW5nfGVufDB8fHx8MTc0MjY2NDQxNXww&ixlib=rb-4.0.3&q=80&w=2000"
 coverAlt: "Breath of Life, Let's Talk Yoga Breathing"
-category: []
-tags: []
+category: ["Breathing"]
+tags: ["breathing", "yoga"]
 author: "Chester Beard"
 slug: "yoga-breathing"
 ---
