@@ -40,7 +40,7 @@ slug: "brain-dump"
 
 <p><strong>5. Stop when the timer ends.</strong> Even mid-thought. You can always do another dump later. The stopping point is what signals your brain that the capture phase is over.</p>
 
-<p>Only after the timer stops do you sort. Go through what you wrote and separate it into three rough piles: things that need action today, things to schedule for later, and things you can let go of entirely. Not everything on a brain dump page deserves a spot on your calendar. Some of it was just noise that needed somewhere to land.</p>
+<p>Only after the timer stops do you sort. Go through what you wrote and separate it into three rough piles: things that need action today, things to schedule for later, and things you can let go of entirely. Not everything on a brain dump page deserves a spot on your calendar. Some of it was just noise that needed somewhere to land. If decision fatigue is slowing you down before you even start sorting, try our <a href="/4-minute-reset-decision-fatigue/">4-minute reset for decision fatigue</a> first, then dump.</p>
 
 <p>One common mistake: treating the brain dump itself as the to-do list. It isn't. A brain dump is capture. Sorting into action is a separate step that happens after, with a clearer head. If you want to go deeper on turning your dumps into actionable plans, <a href="/productivity-journaling/">productivity journaling</a> is the natural next step.</p>
 
