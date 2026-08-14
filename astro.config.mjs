@@ -42,8 +42,9 @@ export default defineConfig({
         if (path === "/search/") return false;
         // Paginated homepage: /page/1/ canonicals to /, /page/2+/ are noindex.
         if (path.startsWith("/page/")) return false;
-        // Tag/category pagination: keep only page 1.
-        if (path.match(/^\/tags\/[^/]+\/([2-9]|[1-9]\d+)\//)) return false;
+        // Tag pages are redirected to category pages; exclude from sitemap.
+        if (path.startsWith("/tags/")) return false;
+        // Category pagination: keep only page 1.
         if (path.match(/^\/category\/[^/]+\/([2-9]|[1-9]\d+)\//)) return false;
         // Anything with a query string.
         if (url.search) return false;

@@ -1,0 +1,104 @@
+{
+  "sheets": [
+    {
+      "name": "Summary",
+      "freezeRows": 1,
+      "columns": [{ "width": 32 }, { "width": 12 }, { "width": 50 }],
+      "rows": [
+        [
+          { "value": "Redirect Category", "bold": true, "fill": "#EEF2FF" },
+          { "value": "Count", "bold": true, "fill": "#EEF2FF", "align": "right" },
+          { "value": "Description", "bold": true, "fill": "#EEF2FF" }
+        ],
+        ["Content Consolidation (posts to hub)", 5, "Thin/duplicate posts 301-redirected to category hub pages or primary post"],
+        ["Tag Pages to Category Pages", 18, "All /tags/{tag}/1/ pages 301-redirected to their primary /category/{Category}/1/ page"],
+        ["Tags Index Page", 1, "/tags/ index 301-redirected to /category/ index page"],
+        ["Route Consolidation (existing)", 4, "Already implemented: /posts/:slug and /tag/:tag redirects from prior commit"],
+        [
+          { "value": "Total Redirects", "bold": true },
+          { "value": 28, "bold": true, "align": "right" },
+          ""
+        ]
+      ],
+      "conditionalFormats": [
+        { "ref": "B2:B5", "rules": [{ "type": "dataBar", "color": "#638EC6" }] }
+      ]
+    },
+    {
+      "name": "Content Consolidation",
+      "freezeRows": 1,
+      "columns": [{ "width": 40 }, { "width": 40 }, { "width": 10 }, { "width": 45 }],
+      "rows": [
+        [
+          { "value": "Source URL", "bold": true, "fill": "#EEF2FF" },
+          { "value": "Target URL", "bold": true, "fill": "#EEF2FF" },
+          { "value": "Type", "bold": true, "fill": "#EEF2FF", "align": "center" },
+          { "value": "Reason", "bold": true, "fill": "#EEF2FF" }
+        ],
+        ["/how-to-brain-dump/", "/category/Journaling/1/", 301, "Consolidate brain-dump posts into Journaling category hub"],
+        ["/brain-dump-journaling/", "/category/Journaling/1/", 301, "Duplicate brain-dump content; redirect to category hub"],
+        ["/creative-brain-dump-techniques/", "/category/Journaling/1/", 301, "URL does not exist (404); redirect external links to hub"],
+        ["/adhd-brain-fog-emergency/", "/category/Mental%20Clarity/1/", 301, "Consolidate into Mental Clarity category hub"],
+        ["/mindfulness-for-brain-fog-2/", "/mindfulness-for-brain-fog/", 301, "Duplicate -2 suffix post; redirect to primary version"]
+      ],
+      "conditionalFormats": [
+        { "ref": "C2:C6", "rules": [{ "type": "cellIs", "operator": "equal", "values": [301], "style": { "fill": "#C6EFCE", "color": "#006100" } }] }
+      ]
+    },
+    {
+      "name": "Tag to Category",
+      "freezeRows": 1,
+      "columns": [{ "width": 28 }, { "width": 12 }, { "width": 12 }, { "width": 36 }, { "width": 36 }],
+      "rows": [
+        [
+          { "value": "Tag", "bold": true, "fill": "#EEF2FF" },
+          { "value": "Posts", "bold": true, "fill": "#EEF2FF", "align": "right" },
+          { "value": "Type", "bold": true, "fill": "#EEF2FF", "align": "center" },
+          { "value": "Source URL", "bold": true, "fill": "#EEF2FF" },
+          { "value": "Target URL (Category Hub)", "bold": true, "fill": "#EEF2FF" }
+        ],
+        ["breathing", 17, 301, "/tags/breathing/1/", "/category/Breathing/1/"],
+        ["journaling", 15, 301, "/tags/journaling/1/", "/category/Journaling/1/"],
+        ["meditation", 12, 301, "/tags/meditation/1/", "/category/Meditation/1/"],
+        ["brain-fog", 7, 301, "/tags/brain-fog/1/", "/category/Meditation/1/"],
+        ["focus", 7, 301, "/tags/focus/1/", "/category/Mental%20Clarity/1/"],
+        ["beginners", 6, 301, "/tags/beginners/1/", "/category/Journaling/1/"],
+        ["mindfulness", 6, 301, "/tags/mindfulness/1/", "/category/Meditation/1/"],
+        ["yoga", 5, 301, "/tags/yoga/1/", "/category/Yoga/1/"],
+        ["anxiety", 4, 301, "/tags/anxiety/1/", "/category/Meditation/1/"],
+        ["creativity", 3, 301, "/tags/creativity/1/", "/category/Journaling/1/"],
+        ["self-reflection", 3, 301, "/tags/self-reflection/1/", "/category/Mental%20Clarity/1/"],
+        ["sleep", 3, 301, "/tags/sleep/1/", "/category/Meditation/1/"],
+        ["stress", 2, 301, "/tags/stress/1/", "/category/Meditation/1/"],
+        ["adhd", 1, 301, "/tags/adhd/1/", "/category/Mental%20Clarity/1/"],
+        ["apps", 1, 301, "/tags/apps/1/", "/category/Meditation/1/"],
+        ["gratitude", 1, 301, "/tags/gratitude/1/", "/category/Journaling/1/"],
+        ["history", 1, 301, "/tags/history/1/", "/category/Yoga/1/"],
+        ["productivity", 1, 301, "/tags/productivity/1/", "/category/Journaling/1/"]
+      ],
+      "conditionalFormats": [
+        { "ref": "B2:B19", "rules": [{ "type": "colorScale", "colors": ["#F8696B", "#FFEB84", "#63BE7B"] }] }
+      ]
+    },
+    {
+      "name": "Route Consolidation",
+      "freezeRows": 1,
+      "columns": [{ "width": 36 }, { "width": 36 }, { "width": 10 }, { "width": 45 }],
+      "rows": [
+        [
+          { "value": "Source URL", "bold": true, "fill": "#EEF2FF" },
+          { "value": "Target URL", "bold": true, "fill": "#EEF2FF" },
+          { "value": "Type", "bold": true, "fill": "#EEF2FF", "align": "center" },
+          { "value": "Reason", "bold": true, "fill": "#EEF2FF" }
+        ],
+        ["/posts/:slug/", "/:slug/", 301, "Duplicate post route removed; already implemented"],
+        ["/posts/:slug", "/:slug/", 301, "Trailing-slash variant; already implemented"],
+        ["/tag/:tag/", "/tags/:tag/1/", 301, "Duplicate tag route removed; already implemented"],
+        ["/tag/:tag/:page/", "/tags/:tag/:page/", 301, "Duplicate tag route pagination; already implemented"]
+      ],
+      "conditionalFormats": [
+        { "ref": "C2:C5", "rules": [{ "type": "cellIs", "operator": "equal", "values": [301], "style": { "fill": "#C6EFCE", "color": "#006100" } }] }
+      ]
+    }
+  ]
+}

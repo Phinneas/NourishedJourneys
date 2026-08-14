@@ -62,9 +62,9 @@ const { Content } = await render(post);
       <Content />
       <div class="flex gap-2 mt-8">
         {
-          post.data.tags.map((tag) => (
+          post.data.category.map((cat) => (
             <span class="inline-block text-xs px-3 py-1 border border-current/20 rounded-lg">
-              <a href={`/tags/${tag}/1/`}>{tag}</a>
+              <a href={`/category/${cat}/1/`}>{cat}</a>
             </span>
           ))
         }

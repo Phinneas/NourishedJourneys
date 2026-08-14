@@ -36,7 +36,7 @@ export const HeaderLinks = [
     title: "Guides",
     children: [
       { href: "/page/1/", title: "All Guides" },
-      { href: "/tags/", title: "By Topic" },
+      { href: "/category/", title: "By Category" },
       { href: "/breathing-visualizer/", title: "Breathing Visualizer" },
     ],
   },
@@ -57,7 +57,7 @@ export const HeaderLinks = [
 // Footer Links, src/components/Footer.astro
 export const FooterLinks = [
   { href: "/about/", title: "About" },
-  { href: "/tags/", title: "All Topics" },
+  { href: "/category/", title: "All Categories" },
   { href: "/search/", title: "Search" },
 ];
 

@@ -3,9 +3,37 @@
 /posts/:slug/  /:slug/  301
 /posts/:slug   /:slug/  301
 
-# Duplicate tag route /tag/{tag}/ -> canonical /tags/{tag}/
-/tag/:tag/     /tags/:tag/1/  301
-/tag/:tag/:page/  /tags/:tag/:page/  301
+# Duplicate tag route /tag/{tag}/ -> now redirects to category pages (see below)
+/tag/:tag/     /category/  301
+/tag/:tag/:page/  /category/  301
+
+# Content consolidation: thin/duplicate posts -> category hub or primary post
+/how-to-brain-dump/               /brain-dump/  301
+/brain-dump-journaling/           /brain-dump/  301
+/creative-brain-dump-techniques/  /brain-dump/  301
+/adhd-brain-fog-emergency/        /category/Mental%20Clarity/1/  301
+/mindfulness-for-brain-fog-2/     /mindfulness-for-brain-fog/  301
+
+# Tag pages -> category pages (consolidate listing pages)
+/tags/  /category/  301
+/tags/adhd/1/           /category/Mental%20Clarity/1/  301
+/tags/anxiety/1/        /category/Meditation/1/  301
+/tags/apps/1/           /category/Meditation/1/  301
+/tags/beginners/1/      /category/Journaling/1/  301
+/tags/brain-fog/1/      /category/Meditation/1/  301
+/tags/breathing/1/      /category/Breathing/1/  301
+/tags/creativity/1/     /category/Journaling/1/  301
+/tags/focus/1/          /category/Mental%20Clarity/1/  301
+/tags/gratitude/1/      /category/Journaling/1/  301
+/tags/history/1/        /category/Yoga/1/  301
+/tags/journaling/1/     /category/Journaling/1/  301
+/tags/meditation/1/     /category/Meditation/1/  301
+/tags/mindfulness/1/    /category/Meditation/1/  301
+/tags/productivity/1/   /category/Journaling/1/  301
+/tags/self-reflection/1/  /category/Mental%20Clarity/1/  301
+/tags/sleep/1/          /category/Meditation/1/  301
+/tags/stress/1/         /category/Meditation/1/  301
+/tags/yoga/1/           /category/Yoga/1/  301
 
 # Add legacy 404 redirects from GSC's exact URL export below this line, e.g.:
 # /old-ghost-path/  /new-path/  301
