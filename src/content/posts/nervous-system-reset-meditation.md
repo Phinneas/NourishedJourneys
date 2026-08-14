@@ -62,7 +62,7 @@ A controlled study published in *Cell Reports Medicine* found that just 5 minute
 
 **Why it works:** The equal-count structure gives your mind something concrete to focus on — useful when racing thoughts are as much a part of the problem as physical tension — while the breath-holds extend the overall rhythm and slow your breathing rate.
 
-**Best for:** Before a stressful conversation or high-stakes moment, when you need calm *and* focus at the same time.
+**Best for:** Before a stressful conversation or high-stakes moment, when you need calm *and* focus at the same time. For a direct comparison with the extended-exhale approach, see <a href="/box-breathing-vs-4-7-8/">Box Breathing vs 4-7-8</a>.
 
 ## Coherent (4-6) Breathing (5 Minutes)
 

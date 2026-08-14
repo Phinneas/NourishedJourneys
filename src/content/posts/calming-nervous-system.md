@@ -103,7 +103,7 @@ The goal isn't perfection — it's giving your nervous system regular, small cue
 ## Frequently Asked Questions
 
 **What is the fastest way to calm your nervous system?**
-For an immediate shift, breath-based techniques work fastest — particularly the physiological sigh, which can produce a noticeable effect in 1–2 minutes. See our full [nervous system reset guide](/nervous-system-reset-meditation/) for more options matched to specific situations.
+For an immediate shift, breath-based techniques work fastest — particularly the physiological sigh, which can produce a noticeable effect in 1–2 minutes. See our full [nervous system reset guide](/nervous-system-reset-meditation/) for more options matched to specific situations. If you're choosing between structured breath patterns, our [box breathing vs 4-7-8 comparison](/box-breathing-vs-4-7-8/) breaks down which works faster for panic.
 
 **How long does it take to actually regulate a dysregulated nervous system?**
 In-the-moment techniques can shift your state within minutes. Building a more resilient baseline — where you're less reactive to stress overall — typically takes consistent practice over several weeks to months, similar to building any other physical capacity.
