@@ -35,5 +35,10 @@
 /tags/stress/1/         /category/Meditation/1/  301
 /tags/yoga/1/           /category/Yoga/1/  301
 
+# Pranayama consolidation: individual technique pages -> hub
+/ocean-breath-in-yoga/            /pranayama-breathing-techniques/  301
+/shitali-breath/                  /pranayama-breathing-techniques/  301
+/chandra-bhedana-breathwork/      /pranayama-breathing-techniques/  301
+
 # Add legacy 404 redirects from GSC's exact URL export below this line, e.g.:
 # /old-ghost-path/  /new-path/  301

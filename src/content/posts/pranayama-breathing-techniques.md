@@ -42,7 +42,7 @@ slug: "pranayama-breathing-techniques"
 
 <p>Ujjayi breath is the default breathing technique during most yoga asana practices. It synchronizes movement with breath and helps maintain steady energy throughout a session.</p>
 
-<p>For a deeper dive into this technique, see our full guide: <a href="/ocean-breath-in-yoga/">Ujjayi Breath (Ocean Breath)</a>.</p>
+<p>Ujjayi breath is the foundation of most yoga asana practices — the technique you reach for on and off the mat.</p>
 
 <h2 id="shitali-breath">Shitali Breath (Cooling Breath)</h2>
 
@@ -68,7 +68,7 @@ slug: "pranayama-breathing-techniques"
 <li><strong>Blood pressure regulation:</strong> May help lower blood pressure through its cooling and calming effects.</li>
 </ul>
 
-<p>For more on this technique, see our full guide: <a href="/shitali-breath/">Shitali Breath</a>.</p>
+<p>Shitali is one of the simplest cooling techniques in pranayama — no special training needed, just a tongue or pursed lips.</p>
 
 <h2 id="chandra-bhedana">Chandra Bhedana (Left Nostril Breathing)</h2>
 
@@ -93,7 +93,7 @@ slug: "pranayama-breathing-techniques"
 <li><strong>Sleep preparation:</strong> Useful as a wind-down practice before bed.</li>
 </ul>
 
-<p>For more details, see our full guide: <a href="/chandra-bhedana-breathwork/">Chandra Bhedana Breathwork</a>.</p>
+<p>Chandra Bhedana pairs well with evening routines and wind-down practices.</p>
 
 <h2 id="surya-bhedana-alternate-nostril">Surya Bhedana and Alternate Nostril Breathing</h2>
 
@@ -173,9 +173,9 @@ slug: "pranayama-breathing-techniques"
 <p>You do not need to master every technique at once. Start with one that matches your current needs:</p>
 
 <ul>
-<li><strong>Feeling anxious or wired?</strong> Try <a href="/chandra-bhedana-breathwork/">Chandra Bhedana</a> or <a href="/shitali-breath/">Shitali</a>.</li>
-<li><strong>Feeling sluggish or cold?</strong> Try <a href="/alternate-nostril-breathing/">Surya Bhedana</a>.</li>
-<li><strong>Want a meditation anchor?</strong> Try <a href="/ocean-breath-in-yoga/">Ujjayi</a>.</li>
+<li><strong>Feeling anxious or wired?</strong> Try <a href="#chandra-bhedana">Chandra Bhedana</a> or <a href="#shitali-breath">Shitali</a>.</li>
+<li><strong>Feeling sluggish or cold?</strong> Try <a href="#surya-bhedana-alternate-nostril">Surya Bhedana</a>.</li>
+<li><strong>Want a meditation anchor?</strong> Try <a href="#ujjayi-ocean-breath">Ujjayi</a>.</li>
 <li><strong>Want overall balance?</strong> Try alternate nostril breathing (Nadi Shodhana).</li>
 </ul>
 
