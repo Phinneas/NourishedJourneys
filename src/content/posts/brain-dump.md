@@ -118,3 +118,13 @@ slug: "brain-dump"
 <p>If your mind feels loud right now, don't overthink the format. Grab whatever's nearby, set a timer for five minutes, and start writing. The method matters less than starting.</p>
 
 <p>Once you've cleared the noise once, the real value comes from making it a repeatable habit rather than a one-time fix. Whether that means a daily morning primer, a weekly deep sweep, or an as-needed release valve when things pile up, the goal is the same: get it out of your head and onto paper, so your mind can do what it's actually good at—thinking, not storing.</p>
+
+<h2 id="related-articles">Related Articles</h2>
+
+<ul>
+<li><a href="/brain-dump-vs-morning-pages/">Brain Dump vs Morning Pages</a> — How brain dumping compares to Julia Cameron's morning pages, and when to reach for each one.</li>
+<li><a href="/productivity-journaling/">Productivity Journaling</a> — Once you've dumped, this is how you turn raw captures into an actionable system.</li>
+<li><a href="/journal-prompts-for-creativity/">Journal Prompts for Creativity</a> — When a blank page feels like too much, prompts give your dump a starting point.</li>
+<li><a href="/4-minute-reset-decision-fatigue/">The 4-Minute Reset for Decision Fatigue</a> — If decision fatigue is blocking your dump, try this breath-and-scan reset first.</li>
+<li><a href="/mindfulness-journaling/">Mindfulness Journaling</a> — A present-moment alternative when you want awareness over action.</li>
+</ul>

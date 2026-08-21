@@ -197,3 +197,12 @@ slug: "4-minute-reset-decision-fatigue"
 
 <h3>Is it worth doing this if my schedule is packed?</h3>
 <p>Yes, because the goal is micro-consistency. The reset fits transitions you already have, like before email or before meetings. Some days it will feel effortless. Other days three conscious breaths still count as progress.</p>
+
+<h2 id="related-articles">Related Articles</h2>
+
+<ul>
+<li><a href="/brain-dump/">The Complete Guide to Brain Dumping</a> — The natural next step after resetting: capture everything on your mind, then sort it.</li>
+<li><a href="/productivity-journaling/">Productivity Journaling</a> — Turn your post-reset clarity into a daily task system.</li>
+<li><a href="/brain-fog-meditation/">Brain Fog Meditation</a> — More techniques for when mental cloudiness blocks clear thinking.</li>
+<li><a href="/journal-prompts-for-creativity/">Journal Prompts for Creativity</a> — When you want to explore ideas rather than just manage tasks.</li>
+</ul>
