@@ -50,6 +50,12 @@
 /mindfulness-attention-training/                           /attention-control-strategies/  301
 /journal-for-anxiety/                                      /mindfulness-for-brain-fog/     301
 
+# GSC crawled-not-indexed fixes (Aug 2026)
+/journaling-for-beginners-2/    /journaling-for-beginners/  301
+/post/:slug                     /:slug/                     301
+/author/chester                 /about/                     301
+/about                          /about/                     301
+
 # GSC 404 fixes — singular /tag/ URLs (Aug 2026)
 /tag/yoga/                                                 /category/Yoga/1/               301
 /tag/breath/                                               /category/Breathing/1/          301
