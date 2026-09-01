@@ -5,6 +5,7 @@ Allow: /
 Disallow: /search
 Disallow: /page/*
 Disallow: /*?*
+Disallow: /~partytown
 
 # Sitemap
 Sitemap: https://www.nourishedjourneys.com/sitemap-index.xml

@@ -40,5 +40,25 @@
 /shitali-breath/                  /pranayama-breathing-techniques/  301
 /chandra-bhedana-breathwork/      /pranayama-breathing-techniques/  301
 
-# Add legacy 404 redirects from GSC's exact URL export below this line, e.g.:
-# /old-ghost-path/  /new-path/  301
+# GSC 404 fixes — old blog posts (Aug 2026)
+/50-brain-dump-prompts/                                    /brain-dump/                    301
+/100-brain-dump-prompts/                                   /brain-dump/                    301
+/adhd-brain-dump/                                          /brain-dump/                    301
+/bullet-journal-brain-dump/                                /brain-dump/                    301
+/creative-brain-dump-techniques-for-writers-artists-unleash-your-imaginatio/  /brain-dump/  301
+/focus-meditation-techniques/                              /brain-fog-meditation/          301
+/mindfulness-attention-training/                           /attention-control-strategies/  301
+/journal-for-anxiety/                                      /mindfulness-for-brain-fog/     301
+
+# GSC 404 fixes — singular /tag/ URLs (Aug 2026)
+/tag/yoga/                                                 /category/Yoga/1/               301
+/tag/breath/                                               /category/Breathing/1/          301
+/tag/mindfulness/                                          /category/Meditation/1/         301
+/tag/journaling/                                           /category/Journaling/1/         301
+/tag/Anxiety/1/                                            /category/Mental%20Clarity/1/   301
+/tag/Attention/1/                                          /category/Mental%20Clarity/1/   301
+/tag/Journaling/1/                                         /category/Journaling/1/         301
+/tag/Meditation/1/                                         /category/Meditation/1/         301
+/tag/Yoga/1/                                               /category/Yoga/1/               301
+/tag/Brain%20Fog/1/                                        /category/Mental%20Clarity/1/   301
+/tag/Mindfulness/1/                                        /category/Meditation/1/         301
