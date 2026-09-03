@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
+import cloudflare from "@astrojs/cloudflare";
 
 import sitemap from "@astrojs/sitemap";
 import { remarkModifiedTime } from "./src/utils/remark-modified-time.mjs";
@@ -11,6 +12,16 @@ import pagefind from "astro-pagefind";
 export default defineConfig({
   site: "https://www.nourishedjourneys.com",
   trailingSlash: "always",
+  adapter: cloudflare({
+    routes: {
+      extend: {
+        exclude: [
+          { pattern: "/_astro/*" },
+          { pattern: "/ads.txt" },
+        ],
+      },
+    },
+  }),
 
   prefetch: {
     prefetchAll: true,
