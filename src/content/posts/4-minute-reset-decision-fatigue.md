@@ -205,4 +205,5 @@ slug: "4-minute-reset-decision-fatigue"
 <li><a href="/productivity-journaling/">Productivity Journaling</a> — Turn your post-reset clarity into a daily task system.</li>
 <li><a href="/brain-fog-meditation/">Brain Fog Meditation</a> — More techniques for when mental cloudiness blocks clear thinking.</li>
 <li><a href="/journal-prompts-for-creativity/">Journal Prompts for Creativity</a> — When you want to explore ideas rather than just manage tasks.</li>
+<li><a href="/brain-dump-vs-morning-pages/">Brain Dump vs Morning Pages</a> — Two powerful methods compared: when to use each one.</li>
 </ul>

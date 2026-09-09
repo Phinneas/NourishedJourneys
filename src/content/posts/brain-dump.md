@@ -127,4 +127,6 @@ slug: "brain-dump"
 <li><a href="/journal-prompts-for-creativity/">Journal Prompts for Creativity</a> — When a blank page feels like too much, prompts give your dump a starting point.</li>
 <li><a href="/4-minute-reset-decision-fatigue/">The 4-Minute Reset for Decision Fatigue</a> — If decision fatigue is blocking your dump, try this breath-and-scan reset first.</li>
 <li><a href="/mindfulness-journaling/">Mindfulness Journaling</a> — A present-moment alternative when you want awareness over action.</li>
+<li><a href="/why-start-a-journal/">Why Start a Journal</a> — 12 proven reasons journaling changes your life, starting with just one page.</li>
+<li><a href="/journal-vs-diary/">Journal vs Diary</a> — The difference matters: understand which format serves your goals best.</li>
 </ul>
