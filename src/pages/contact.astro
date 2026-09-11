@@ -1,0 +1,29 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { SITE_TITLE } from "@consts";
+---
+
+<BaseLayout title={`Contact – ${SITE_TITLE}`} description="Get in touch with Nourished Journeys. Questions about meditation, breathwork, or journaling?">
+  <article class="prose mx-auto max-w-4xl">
+    <h1>Contact</h1>
+
+    <p>Questions about meditation, breathwork, or journaling? Feedback on an article? Partnership inquiry? I'd love to hear from you.</p>
+
+    <h2>Email</h2>
+    <p>The best way to reach me is by email:</p>
+    <p><a href="mailto:buzzUW2@gmail.com">buzzUW2@gmail.com</a></p>
+    <p>I read every message and do my best to respond within a few days. If you're writing about a specific article, including the link helps me give you a better answer.</p>
+
+    <h2>Newsletter</h2>
+    <p>For new articles, breathing techniques, and journaling prompts delivered to your inbox, <a href="#newsletter">subscribe to the newsletter</a>. You can unsubscribe any time.</p>
+
+    <h2>Connect</h2>
+    <p>You can also find Nourished Journeys on:</p>
+    <ul>
+      <li><a href="/rss.xml">RSS Feed</a> — Subscribe in your favorite reader</li>
+    </ul>
+
+    <h2>Content Requests</h2>
+    <p>If there's a topic you'd like us to cover — a specific breathing technique, a meditation for a particular situation, a journaling approach you've been curious about — send it over. Reader questions directly shape what gets written next.</p>
+  </article>
+</BaseLayout>

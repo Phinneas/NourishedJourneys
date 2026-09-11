@@ -1,6 +1,6 @@
 ---
 title: "Pranayama Breathing Techniques: A Complete Guide to Yoga's Breath Practices"
-pubDate: "2026-08-14T15:00:00.000Z"
+pubDate: "2026-07-10T15:00:00.000Z"
 description: "Pranayama is the ancient yogic science of breath control. This guide covers the essential techniques — Ocean Breath, Shitali, Chandra Bhedana, Alternate Nostril — with steps, benefits, and precautions."
 cover: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fHlvZ2ElMjBicmVhdGhpbmd8ZW58MHx8fHwxNzU1MjE0NDE1fDA&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "Pranayama Breathing Techniques: A Complete Guide to Yoga's Breath Practices"

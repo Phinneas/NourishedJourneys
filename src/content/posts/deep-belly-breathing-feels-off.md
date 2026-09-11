@@ -1,6 +1,6 @@
 ---
 title: "Why Deep Belly Breathing Feels 'Off' (and the Ribcage Fix)"
-pubDate: "2026-08-14T13:00:00.000Z"
+pubDate: "2026-07-24T13:00:00.000Z"
 description: "Deep belly breathing feels weird, tight, or ineffective? It's usually a mechanics mismatch between your body's default pattern and what the cue asks for. Here's the ribcage fix."
 cover: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fHlvZ2ElMjBicmVhdGhpbmd8ZW58MHx8fHwxNzU1MjE0ODA4fDA&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "Why Deep Belly Breathing Feels Off and the Ribcage Fix"

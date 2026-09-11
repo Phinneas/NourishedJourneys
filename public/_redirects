@@ -1,3 +1,6 @@
+# Sitemap redirect
+/sitemap.xml  /sitemap-index.xml  301
+
 # Route consolidation redirects (301) — absorb duplicate URLs removed from the build.
 # Duplicate post route /posts/{slug}/ -> canonical /{slug}/
 /posts/:slug/  /:slug/  301

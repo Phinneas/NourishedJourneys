@@ -1,6 +1,6 @@
 ---
 title: "The 4-Minute Reset for Decision Fatigue That Outperforms a Coffee Break"
-pubDate: "2026-08-14T11:00:00.000Z"
+pubDate: "2026-08-28T11:00:00.000Z"
 description: "The average adult makes 35,000 decisions per day. When decision fatigue hits, a coffee break won't fix it. This 4-minute reset uses breath, body awareness, and one intention line to restore clarity fast."
 cover: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fHJlc2V0JTIwYnJlYWt8ZW58MHx8fHwxNzU1MjE0ODAwfDA&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "The 4-Minute Reset for Decision Fatigue That Outperforms a Coffee Break"

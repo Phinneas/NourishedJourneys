@@ -59,6 +59,9 @@ export const FooterLinks = [
   { href: "/about/", title: "About" },
   { href: "/category/", title: "All Categories" },
   { href: "/search/", title: "Search" },
+  { href: "/privacy/", title: "Privacy" },
+  { href: "/terms/", title: "Terms" },
+  { href: "/contact/", title: "Contact" },
 ];
 
 // Social Links, src/components/Footer.astro

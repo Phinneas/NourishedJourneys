@@ -1,6 +1,6 @@
 ---
 title: "Box Breathing vs 4-7-8: Which Technique Stops Panic Faster?"
-pubDate: "2026-08-14T09:00:00.000Z"
+pubDate: "2026-08-07T09:00:00.000Z"
 description: "Box breathing (4-4-4-4) and 4-7-8 breathing both calm your nervous system fast. This guide compares structure, timing, and what to expect so you can pick the right tool when panic spikes."
 cover: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fGNhbG0lMjBicmVhdGhpbmd8ZW58MHx8fHwxNzU1MjE0Nzg0fDA&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "Box Breathing vs 4-7-8: Which Technique Stops Panic Faster?"

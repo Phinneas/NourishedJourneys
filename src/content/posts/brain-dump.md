@@ -1,6 +1,6 @@
 ---
 title: "Brain Dump: The Complete Guide to Clearing Your Mind on Paper"
-pubDate: "2026-08-14T07:00:00.000Z"
+pubDate: "2026-08-21T07:00:00.000Z"
 description: "Your mind was built to have ideas, not to hold onto them. Learn how a brain dump moves thoughts out of your head and onto paper, with templates, ADHD tips, and how it compares to morning pages."
 cover: "https://images.unsplash.com/photo-1517842645767-c639042777db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fG5vdGVib29rfGVufDB8fHx8MTc1NTE2MjI5N3ww&ixlib=rb-4.1.0&q=80&w=2000"
 coverAlt: "Brain Dump: The Complete Guide to Clearing Your Mind on Paper"
