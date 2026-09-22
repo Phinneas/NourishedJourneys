@@ -1,73 +1,167 @@
 # Sitemap redirect
 /sitemap.xml  /sitemap-index.xml  301
 
-# Route consolidation redirects (301) — absorb duplicate URLs removed from the build.
-# Duplicate post route /posts/{slug}/ -> canonical /{slug}/
+# ==========================================================================
+# Legacy Ghost post routes: /post/{slug} and /posts/{slug}
+# Specific rules for consolidated (deleted) slugs MUST come before the
+# generic wildcards below so they redirect directly to the final
+# destination without chains.
+# ==========================================================================
+
+# /post/ + /posts/ variants of consolidated slugs -> final destination
+/post/how-to-brain-dump/    /brain-dump/  301
+/post/how-to-brain-dump     /brain-dump/  301
+/posts/how-to-brain-dump/   /brain-dump/  301
+/posts/how-to-brain-dump    /brain-dump/  301
+
+/post/brain-dump-journaling/    /brain-dump/  301
+/post/brain-dump-journaling     /brain-dump/  301
+/posts/brain-dump-journaling/   /brain-dump/  301
+/posts/brain-dump-journaling    /brain-dump/  301
+
+/post/creative-brain-dump-techniques/    /brain-dump/  301
+/post/creative-brain-dump-techniques     /brain-dump/  301
+/posts/creative-brain-dump-techniques/   /brain-dump/  301
+/posts/creative-brain-dump-techniques    /brain-dump/  301
+
+/post/50-brain-dump-prompts/    /brain-dump/  301
+/post/50-brain-dump-prompts     /brain-dump/  301
+/posts/50-brain-dump-prompts/   /brain-dump/  301
+/posts/50-brain-dump-prompts    /brain-dump/  301
+
+/post/100-brain-dump-prompts/    /brain-dump/  301
+/post/100-brain-dump-prompts     /brain-dump/  301
+/posts/100-brain-dump-prompts/   /brain-dump/  301
+/posts/100-brain-dump-prompts    /brain-dump/  301
+
+/post/adhd-brain-dump/    /brain-dump/  301
+/post/adhd-brain-dump     /brain-dump/  301
+/posts/adhd-brain-dump/   /brain-dump/  301
+/posts/adhd-brain-dump    /brain-dump/  301
+
+/post/bullet-journal-brain-dump/    /brain-dump/  301
+/post/bullet-journal-brain-dump     /brain-dump/  301
+/posts/bullet-journal-brain-dump/   /brain-dump/  301
+/posts/bullet-journal-brain-dump    /brain-dump/  301
+
+/post/creative-brain-dump-techniques-for-writers-artists-unleash-your-imaginatio/    /brain-dump/  301
+/post/creative-brain-dump-techniques-for-writers-artists-unleash-your-imaginatio     /brain-dump/  301
+/posts/creative-brain-dump-techniques-for-writers-artists-unleash-your-imaginatio/   /brain-dump/  301
+/posts/creative-brain-dump-techniques-for-writers-artists-unleash-your-imaginatio    /brain-dump/  301
+
+/post/adhd-brain-fog-emergency/    /brain-fog-meditation/  301
+/post/adhd-brain-fog-emergency     /brain-fog-meditation/  301
+/posts/adhd-brain-fog-emergency/   /brain-fog-meditation/  301
+/posts/adhd-brain-fog-emergency    /brain-fog-meditation/  301
+
+/post/focus-meditation-techniques/    /brain-fog-meditation/  301
+/post/focus-meditation-techniques     /brain-fog-meditation/  301
+/posts/focus-meditation-techniques/   /brain-fog-meditation/  301
+/posts/focus-meditation-techniques    /brain-fog-meditation/  301
+
+/post/mindfulness-attention-training/    /attention-control-strategies/  301
+/post/mindfulness-attention-training     /attention-control-strategies/  301
+/posts/mindfulness-attention-training/   /attention-control-strategies/  301
+/posts/mindfulness-attention-training    /attention-control-strategies/  301
+
+/post/journal-for-anxiety/    /mindfulness-for-brain-fog/  301
+/post/journal-for-anxiety     /mindfulness-for-brain-fog/  301
+/posts/journal-for-anxiety/   /mindfulness-for-brain-fog/  301
+/posts/journal-for-anxiety    /mindfulness-for-brain-fog/  301
+
+/post/mindfulness-for-brain-fog-2/    /mindfulness-for-brain-fog/  301
+/post/mindfulness-for-brain-fog-2     /mindfulness-for-brain-fog/  301
+/posts/mindfulness-for-brain-fog-2/   /mindfulness-for-brain-fog/  301
+/posts/mindfulness-for-brain-fog-2    /mindfulness-for-brain-fog/  301
+
+/post/journaling-for-beginners-2/    /journaling-for-beginners/  301
+/post/journaling-for-beginners-2     /journaling-for-beginners/  301
+/posts/journaling-for-beginners-2/   /journaling-for-beginners/  301
+/posts/journaling-for-beginners-2    /journaling-for-beginners/  301
+
+/post/ocean-breath-in-yoga/    /pranayama-breathing-techniques/  301
+/post/ocean-breath-in-yoga     /pranayama-breathing-techniques/  301
+/posts/ocean-breath-in-yoga/   /pranayama-breathing-techniques/  301
+/posts/ocean-breath-in-yoga    /pranayama-breathing-techniques/  301
+
+/post/shitali-breath/    /pranayama-breathing-techniques/  301
+/post/shitali-breath     /pranayama-breathing-techniques/  301
+/posts/shitali-breath/   /pranayama-breathing-techniques/  301
+/posts/shitali-breath    /pranayama-breathing-techniques/  301
+
+/post/chandra-bhedana-breathwork/    /pranayama-breathing-techniques/  301
+/post/chandra-bhedana-breathwork     /pranayama-breathing-techniques/  301
+/posts/chandra-bhedana-breathwork/   /pranayama-breathing-techniques/  301
+/posts/chandra-bhedana-breathwork    /pranayama-breathing-techniques/  301
+
+# Generic legacy post routes (surviving slugs): /post(s)/{slug} -> /{slug}/
+/post/:slug/   /:slug/  301
+/post/:slug    /:slug/  301
 /posts/:slug/  /:slug/  301
 /posts/:slug   /:slug/  301
 
-# Duplicate tag route /tag/{tag}/ -> now redirects to category pages (see below)
-/tag/:tag/     /category/  301
-/tag/:tag/:page/  /category/  301
-
-# Content consolidation: thin/duplicate posts -> category hub or primary post
+# ==========================================================================
+# Content consolidation redirects (301) — removed posts -> surviving pages
+# ==========================================================================
 /how-to-brain-dump/               /brain-dump/  301
 /brain-dump-journaling/           /brain-dump/  301
 /creative-brain-dump-techniques/  /brain-dump/  301
-/adhd-brain-fog-emergency/        /category/Mental%20Clarity/1/  301
+/50-brain-dump-prompts/           /brain-dump/  301
+/100-brain-dump-prompts/          /brain-dump/  301
+/adhd-brain-dump/                 /brain-dump/  301
+/bullet-journal-brain-dump/       /brain-dump/  301
+/creative-brain-dump-techniques-for-writers-artists-unleash-your-imaginatio/  /brain-dump/  301
+/adhd-brain-fog-emergency/        /brain-fog-meditation/  301
+/focus-meditation-techniques/     /brain-fog-meditation/  301
+/mindfulness-attention-training/  /attention-control-strategies/  301
+/journal-for-anxiety/             /mindfulness-for-brain-fog/  301
 /mindfulness-for-brain-fog-2/     /mindfulness-for-brain-fog/  301
-
-# Tag pages -> category pages (consolidate listing pages)
-/tags/  /category/  301
-/tags/adhd/1/           /category/Mental%20Clarity/1/  301
-/tags/anxiety/1/        /category/Meditation/1/  301
-/tags/apps/1/           /category/Meditation/1/  301
-/tags/beginners/1/      /category/Journaling/1/  301
-/tags/brain-fog/1/      /category/Meditation/1/  301
-/tags/breathing/1/      /category/Breathing/1/  301
-/tags/creativity/1/     /category/Journaling/1/  301
-/tags/focus/1/          /category/Mental%20Clarity/1/  301
-/tags/gratitude/1/      /category/Journaling/1/  301
-/tags/history/1/        /category/Yoga/1/  301
-/tags/journaling/1/     /category/Journaling/1/  301
-/tags/meditation/1/     /category/Meditation/1/  301
-/tags/mindfulness/1/    /category/Meditation/1/  301
-/tags/productivity/1/   /category/Journaling/1/  301
-/tags/self-reflection/1/  /category/Mental%20Clarity/1/  301
-/tags/sleep/1/          /category/Meditation/1/  301
-/tags/stress/1/         /category/Meditation/1/  301
-/tags/yoga/1/           /category/Yoga/1/  301
-
-# Pranayama consolidation: individual technique pages -> hub
+/journaling-for-beginners-2/      /journaling-for-beginners/  301
 /ocean-breath-in-yoga/            /pranayama-breathing-techniques/  301
 /shitali-breath/                  /pranayama-breathing-techniques/  301
 /chandra-bhedana-breathwork/      /pranayama-breathing-techniques/  301
 
-# GSC 404 fixes — old blog posts (Aug 2026)
-/50-brain-dump-prompts/                                    /brain-dump/                    301
-/100-brain-dump-prompts/                                   /brain-dump/                    301
-/adhd-brain-dump/                                          /brain-dump/                    301
-/bullet-journal-brain-dump/                                /brain-dump/                    301
-/creative-brain-dump-techniques-for-writers-artists-unleash-your-imaginatio/  /brain-dump/  301
-/focus-meditation-techniques/                              /brain-fog-meditation/          301
-/mindfulness-attention-training/                           /attention-control-strategies/  301
-/journal-for-anxiety/                                      /mindfulness-for-brain-fog/     301
+# ==========================================================================
+# Tag routes -> category pages (specific rules before generic wildcards)
+# ==========================================================================
+/tag/yoga/           /category/Yoga/1/               301
+/tag/breath/         /category/Breathing/1/          301
+/tag/mindfulness/    /category/Meditation/1/         301
+/tag/journaling/     /category/Journaling/1/         301
+/tag/Anxiety/1/      /category/Mental%20Clarity/1/   301
+/tag/Attention/1/    /category/Mental%20Clarity/1/   301
+/tag/Journaling/1/   /category/Journaling/1/         301
+/tag/Meditation/1/   /category/Meditation/1/         301
+/tag/Yoga/1/         /category/Yoga/1/               301
+/tag/Brain%20Fog/1/  /category/Mental%20Clarity/1/   301
+/tag/Mindfulness/1/  /category/Meditation/1/         301
 
-# GSC crawled-not-indexed fixes (Aug 2026)
-/journaling-for-beginners-2/    /journaling-for-beginners/  301
-/post/:slug                     /:slug/                     301
-/author/chester                 /about/                     301
-/about                          /about/                     301
+/tags/                      /category/                       301
+/tags/adhd/1/               /category/Mental%20Clarity/1/    301
+/tags/anxiety/1/            /category/Meditation/1/          301
+/tags/apps/1/               /category/Meditation/1/          301
+/tags/beginners/1/          /category/Journaling/1/          301
+/tags/brain-fog/1/          /category/Meditation/1/          301
+/tags/breathing/1/          /category/Breathing/1/           301
+/tags/creativity/1/         /category/Journaling/1/          301
+/tags/focus/1/              /category/Mental%20Clarity/1/    301
+/tags/gratitude/1/          /category/Journaling/1/          301
+/tags/history/1/            /category/Yoga/1/                301
+/tags/journaling/1/         /category/Journaling/1/          301
+/tags/meditation/1/         /category/Meditation/1/          301
+/tags/mindfulness/1/        /category/Meditation/1/          301
+/tags/productivity/1/       /category/Journaling/1/          301
+/tags/self-reflection/1/    /category/Mental%20Clarity/1/    301
+/tags/sleep/1/              /category/Meditation/1/          301
+/tags/stress/1/             /category/Meditation/1/          301
+/tags/yoga/1/               /category/Yoga/1/                301
+/tags/*                     /category/                       301
 
-# GSC 404 fixes — singular /tag/ URLs (Aug 2026)
-/tag/yoga/                                                 /category/Yoga/1/               301
-/tag/breath/                                               /category/Breathing/1/          301
-/tag/mindfulness/                                          /category/Meditation/1/         301
-/tag/journaling/                                           /category/Journaling/1/         301
-/tag/Anxiety/1/                                            /category/Mental%20Clarity/1/   301
-/tag/Attention/1/                                          /category/Mental%20Clarity/1/   301
-/tag/Journaling/1/                                         /category/Journaling/1/         301
-/tag/Meditation/1/                                         /category/Meditation/1/         301
-/tag/Yoga/1/                                               /category/Yoga/1/               301
-/tag/Brain%20Fog/1/                                        /category/Mental%20Clarity/1/   301
-/tag/Mindfulness/1/                                        /category/Meditation/1/         301
+# Generic tag fallbacks — must stay below the specific rules above.
+# Destination is the category index (/category/), which lists all topics.
+/tag/:tag/        /category/  301
+/tag/:tag/:page/  /category/  301
+
+# Misc legacy routes
+/author/chester  /about/  301
+/about           /about/  301
