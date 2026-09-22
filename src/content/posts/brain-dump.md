@@ -30,6 +30,13 @@ slug: "brain-dump"
 
 <p>The process is simple by design. Complicating it defeats the purpose.</p>
 
+<figure class="my-8">
+  <img src="/brain-dump-mind-dump-cycle.svg" alt="The Mind Dump Cycle: set a timer, pick a place, write without editing, keep going, stop when the timer ends, then sort into piles." loading="lazy" class="w-full max-w-2xl mx-auto" />
+  <figcaption class="text-center text-sm text-gray-500 mt-2">The six-step brain dump process at a glance.</figcaption>
+</figure>
+
+<p class="text-center"><a href="/pdfs/How_to_Do_a_Brain_Dump_Cycle.pdf" download class="inline-block bg-primary-600 text-white px-4 py-2 rounded hover:bg-primary-700 transition-colors">Download the printable PDF</a></p>
+
 <p><strong>1. Set a timer.</strong> Ten minutes is a good default. Five works for a quick reset mid-task. Twenty or thirty makes sense for a first-time or quarterly deep dump. The timer matters more than the length you pick, because it keeps you moving instead of second-guessing what's worth writing down.</p>
 
 <p><strong>2. Pick one place.</strong> A notebook, a blank doc, a notes app—whatever's already within reach. The tool matters less than not switching tools mid-dump.</p>
