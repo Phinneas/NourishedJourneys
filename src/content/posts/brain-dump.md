@@ -59,7 +59,7 @@ slug: "brain-dump"
 
 <p>ADHD minds also tend to generate a higher volume of simultaneous, competing thoughts—sometimes called "racing thoughts" or the "forty tabs open" feeling. A brain dump interrupts the loop that keeps those thoughts cycling for attention. Getting them onto paper, even in a chaotic list with no order, gives the brain permission to stop rehearsing them.</p>
 
-<p>A few adjustments make brain dumping more effective specifically for ADHD:</p>
+<p>A few adjustments make brain dumping more effective specifically for ADHD (for the full walkthrough, see our <a href="/adhd-brain-dump/">ADHD brain dump guide</a>):</p>
 
 <ul>
 <li><strong>Use category prompts, not a blank page.</strong> A blank page can be paralyzing when your mind is already loud. Trigger categories—work, health, money, relationships, ideas—help pull thoughts out of hiding instead of waiting for them to surface on their own.</li>
@@ -131,6 +131,10 @@ slug: "brain-dump"
 <ul>
 <li><a href="/brain-dump-vs-morning-pages/">Brain Dump vs Morning Pages</a> — How brain dumping compares to Julia Cameron's morning pages, and when to reach for each one.</li>
 <li><a href="/productivity-journaling/">Productivity Journaling</a> — Once you've dumped, this is how you turn raw captures into an actionable system.</li>
+<li><a href="/100-brain-dump-prompts/">100 Brain Dump Prompts</a> — Ten themed prompt sessions for when a blank page feels like too much.</li>
+<li><a href="/adhd-brain-dump/">ADHD Brain Dump Guide</a> — Step-by-step brain dumping built around executive function, time blindness, and thought loops.</li>
+<li><a href="/bullet-journal-brain-dump/">Bullet Journal Brain Dump</a> — Five page layouts for doing your dump inside a bullet journal.</li>
+<li><a href="/creative-brain-dump-techniques-for-writers-artists-unleash-your-imaginatio/">Creative Brain Dump Techniques</a> — Brain dump methods for writers and artists working through creative blocks.</li>
 <li><a href="/journal-prompts-for-creativity/">Journal Prompts for Creativity</a> — When a blank page feels like too much, prompts give your dump a starting point.</li>
 <li><a href="/4-minute-reset-decision-fatigue/">The 4-Minute Reset for Decision Fatigue</a> — If decision fatigue is blocking your dump, try this breath-and-scan reset first.</li>
 <li><a href="/mindfulness-journaling/">Mindfulness Journaling</a> — A present-moment alternative when you want awareness over action.</li>

@@ -18,7 +18,7 @@ slug: "pranayama-breathing-techniques"
 
 <h2 id="ujjayi-ocean-breath">Ujjayi Breath (Ocean Breath)</h2>
 
-<p>Ujjayi breath, commonly known as "ocean breath" or "victorious breath," is one of the most transformative breathing techniques in yoga practice. It creates a soothing, ocean-like sound while generating warmth and energy throughout your body.</p>
+<p>For a full step-by-step walkthrough, read our <a href="/ocean-breath-in-yoga/">complete ujjayi (ocean breath) guide</a>.</p><p>Ujjayi breath, commonly known as "ocean breath" or "victorious breath," is one of the most transformative breathing techniques in yoga practice. It creates a soothing, ocean-like sound while generating warmth and energy throughout your body.</p>
 
 <h3>How to Practice Ujjayi Breath</h3>
 

@@ -19,6 +19,7 @@ slug: "mindfulness-journaling"
 <li><a href="/journaling-for-beginners/">Journaling for Beginners</a> — New to journaling? Start here with benefits, methods, and simple tips.</li>
 <li><a href="/brain-dump/">The Complete Guide to Brain Dumping</a> — The raw capture alternative: when you need to clear your head fast without the present-moment focus.</li>
 <li><a href="/brain-dump-vs-morning-pages/">Brain Dump vs Morning Pages</a> — How brain dumping and morning pages compare, and when each one fits.</li>
+<li><a href="/journal-for-anxiety/">Journal for Anxiety</a> — The research on how journaling reduces anxiety, plus evidence-based techniques.</li>
 <li><a href="/journal-prompts-for-creativity/">Journal Prompts for Creativity</a> — Structured prompts for when you want direction in your writing practice.</li>
 <li><a href="/4-minute-reset-decision-fatigue/">The 4-Minute Reset for Decision Fatigue</a> — A breath-and-scan reset that pairs well with mindful journaling.</li>
 </ul>
