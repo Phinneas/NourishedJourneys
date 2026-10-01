@@ -57,6 +57,7 @@ slug: "brain-fog-meditation"
 <li><a href="/5-minute-meditation-for-brain-fog/">5-Minute Meditation for Brain Fog</a> — When you only have five minutes, this quick routine delivers fast relief.</li>
 <li><a href="/mindfulness-for-brain-fog/">Mindfulness for Brain Fog</a> — A gentler, awareness-based approach to clearing mental cloudiness.</li>
 <li><a href="/best-meditation-apps-for-brain-fog-10-apps-that-actually-clear-mental-cloudiness/">Best Meditation Apps for Brain Fog</a> — Guided options if you prefer having a voice lead you through the practice.</li>
+<li><a href="/focus-meditation-techniques/">7 Focus Meditation Techniques</a> — When the goal is sharper concentration rather than clearing fog.</li>
 <li><a href="/nervous-system-reset-meditation/">Nervous System Reset Meditation</a> — When brain fog is driven by a dysregulated nervous system, start here.</li>
 <li><a href="/4-minute-reset-decision-fatigue/">The 4-Minute Reset for Decision Fatigue</a> — A breath-and-scan reset that pairs well with these techniques.</li>
 </ul>

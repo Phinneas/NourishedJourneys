@@ -24,50 +24,22 @@
 /posts/creative-brain-dump-techniques/   /brain-dump/  301
 /posts/creative-brain-dump-techniques    /brain-dump/  301
 
-/post/50-brain-dump-prompts/    /brain-dump/  301
-/post/50-brain-dump-prompts     /brain-dump/  301
-/posts/50-brain-dump-prompts/   /brain-dump/  301
-/posts/50-brain-dump-prompts    /brain-dump/  301
+/post/50-brain-dump-prompts/    /100-brain-dump-prompts/  301
+/post/50-brain-dump-prompts     /100-brain-dump-prompts/  301
+/posts/50-brain-dump-prompts/   /100-brain-dump-prompts/  301
+/posts/50-brain-dump-prompts    /100-brain-dump-prompts/  301
 
-/post/100-brain-dump-prompts/    /brain-dump/  301
-/post/100-brain-dump-prompts     /brain-dump/  301
-/posts/100-brain-dump-prompts/   /brain-dump/  301
-/posts/100-brain-dump-prompts    /brain-dump/  301
 
-/post/adhd-brain-dump/    /brain-dump/  301
-/post/adhd-brain-dump     /brain-dump/  301
-/posts/adhd-brain-dump/   /brain-dump/  301
-/posts/adhd-brain-dump    /brain-dump/  301
 
-/post/bullet-journal-brain-dump/    /brain-dump/  301
-/post/bullet-journal-brain-dump     /brain-dump/  301
-/posts/bullet-journal-brain-dump/   /brain-dump/  301
-/posts/bullet-journal-brain-dump    /brain-dump/  301
 
-/post/creative-brain-dump-techniques-for-writers-artists-unleash-your-imaginatio/    /brain-dump/  301
-/post/creative-brain-dump-techniques-for-writers-artists-unleash-your-imaginatio     /brain-dump/  301
-/posts/creative-brain-dump-techniques-for-writers-artists-unleash-your-imaginatio/   /brain-dump/  301
-/posts/creative-brain-dump-techniques-for-writers-artists-unleash-your-imaginatio    /brain-dump/  301
 
 /post/adhd-brain-fog-emergency/    /brain-fog-meditation/  301
 /post/adhd-brain-fog-emergency     /brain-fog-meditation/  301
 /posts/adhd-brain-fog-emergency/   /brain-fog-meditation/  301
 /posts/adhd-brain-fog-emergency    /brain-fog-meditation/  301
 
-/post/focus-meditation-techniques/    /brain-fog-meditation/  301
-/post/focus-meditation-techniques     /brain-fog-meditation/  301
-/posts/focus-meditation-techniques/   /brain-fog-meditation/  301
-/posts/focus-meditation-techniques    /brain-fog-meditation/  301
 
-/post/mindfulness-attention-training/    /attention-control-strategies/  301
-/post/mindfulness-attention-training     /attention-control-strategies/  301
-/posts/mindfulness-attention-training/   /attention-control-strategies/  301
-/posts/mindfulness-attention-training    /attention-control-strategies/  301
 
-/post/journal-for-anxiety/    /mindfulness-for-brain-fog/  301
-/post/journal-for-anxiety     /mindfulness-for-brain-fog/  301
-/posts/journal-for-anxiety/   /mindfulness-for-brain-fog/  301
-/posts/journal-for-anxiety    /mindfulness-for-brain-fog/  301
 
 /post/mindfulness-for-brain-fog-2/    /mindfulness-for-brain-fog/  301
 /post/mindfulness-for-brain-fog-2     /mindfulness-for-brain-fog/  301
@@ -79,10 +51,6 @@
 /posts/journaling-for-beginners-2/   /journaling-for-beginners/  301
 /posts/journaling-for-beginners-2    /journaling-for-beginners/  301
 
-/post/ocean-breath-in-yoga/    /pranayama-breathing-techniques/  301
-/post/ocean-breath-in-yoga     /pranayama-breathing-techniques/  301
-/posts/ocean-breath-in-yoga/   /pranayama-breathing-techniques/  301
-/posts/ocean-breath-in-yoga    /pranayama-breathing-techniques/  301
 
 /post/shitali-breath/    /pranayama-breathing-techniques/  301
 /post/shitali-breath     /pranayama-breathing-techniques/  301
@@ -102,22 +70,20 @@
 
 # ==========================================================================
 # Content consolidation redirects (301) — removed posts -> surviving pages
+# 2026-09-30: restored 8 high-value URLs (mindfulness-attention-training,
+# adhd-brain-dump, focus-meditation-techniques, 100-brain-dump-prompts,
+# bullet-journal-brain-dump, creative-brain-dump-techniques-..., journal-for-anxiety,
+# ocean-breath-in-yoga) as live 200 pages; their redirects were removed.
+# /post(s)/ variants now fall through to the generic /posts/:slug -> /:slug/ rule.
+# 50-brain-dump-prompts has no surviving source; it now points at 100-brain-dump-prompts.
 # ==========================================================================
 /how-to-brain-dump/               /brain-dump/  301
 /brain-dump-journaling/           /brain-dump/  301
 /creative-brain-dump-techniques/  /brain-dump/  301
-/50-brain-dump-prompts/           /brain-dump/  301
-/100-brain-dump-prompts/          /brain-dump/  301
-/adhd-brain-dump/                 /brain-dump/  301
-/bullet-journal-brain-dump/       /brain-dump/  301
-/creative-brain-dump-techniques-for-writers-artists-unleash-your-imaginatio/  /brain-dump/  301
+/50-brain-dump-prompts/           /100-brain-dump-prompts/  301
 /adhd-brain-fog-emergency/        /brain-fog-meditation/  301
-/focus-meditation-techniques/     /brain-fog-meditation/  301
-/mindfulness-attention-training/  /attention-control-strategies/  301
-/journal-for-anxiety/             /mindfulness-for-brain-fog/  301
 /mindfulness-for-brain-fog-2/     /mindfulness-for-brain-fog/  301
 /journaling-for-beginners-2/      /journaling-for-beginners/  301
-/ocean-breath-in-yoga/            /pranayama-breathing-techniques/  301
 /shitali-breath/                  /pranayama-breathing-techniques/  301
 /chandra-bhedana-breathwork/      /pranayama-breathing-techniques/  301
 
